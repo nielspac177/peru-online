@@ -21,8 +21,8 @@ These are planning tools chosen for this project; the course's required planning
 
 | Priority | Requirements |
 | --- | --- |
-| Must | At least three linked pages; 1997–2025 scope; reliable attributed research; responsive desktop and mobile layouts; JSON rendered through the module's template engine; JSON validation; readable commented code; HTML/accessibility tests; code ZIP; PDF report at most 1,500 words |
-| Should | Four coherent pages; local dependencies and assets; keyboard support; reduced-motion support; visible source links; genuine feedback on prototypes with recorded improvements; clear local running instructions |
+| Must | At least three linked pages; 1997–2025 scope; reliable attributed research; responsive desktop and mobile layouts; JSON rendered through the module's template engine; JSON validation; readable commented code; HTML/accessibility tests; genuine feedback on prototypes with recorded improvements; code ZIP; PDF report at most 1,500 words |
+| Should | Four coherent pages; local dependencies and assets; keyboard support; reduced-motion support; visible source links; clear local running instructions |
 | Could | Restrained globe motion, period filters, generated decorative illustrations, visual comparison of access patterns |
 | Won't in this version | User accounts, comments, a server database, live statistics, or unsourced personal memories |
 

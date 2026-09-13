@@ -1,0 +1,9 @@
+{
+  "pdf": "Peru_Online_Report.pdf",
+  "pages": 4,
+  "extractedWordCount": 916,
+  "imageWordsAllowance": 563,
+  "inclusiveWordCount": 1479,
+  "limit": 1500,
+  "includes": "body, headers, captions, references, page furniture and conservative count of text within the wireframe image"
+}

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T21:09:03.155Z",
+  "generatedAt": "2026-09-13T20:59:04.174Z",
   "tool": "axe-core 4.10.3 in a real browser",
   "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
   "configuration": {
@@ -37,6 +37,13 @@
           "help": "Elements must meet minimum color contrast ratio thresholds",
           "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
           "nodes": [
+            {
+              "target": [
+                ".scene-index"
+              ],
+              "html": "<span class=\"scene-index mono\" aria-hidden=\"true\">FIG. 01 / A WORLD WITHIN REACH</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
             {
               "target": [
                 ".lima-label > div"
