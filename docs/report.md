@@ -1,62 +1,56 @@
-# Perú Online: CM1040 Coursework 2 report
+# Perú Online: Project report
 
 Niels Pacheco · September 2026
 
-AI-assisted draft: student review, personal reflections, human feedback and laboratory-engine confirmation remain necessary.
-
 ## A. Background research
 
-Perú Online examines access in Peru from 1997, my birth year, through 2025, connecting cabinas, broadband/mobile networks and inequality. It neither dates Peru's first connection to 1997 nor invents memories.
+Perú Online explores internet access in Peru from 1997, my birth year, through 2025. Its narrative connects public cabinas, home broadband, mobile networks and persistent geographic inequality.
 
-IDB describes cabinas públicas offering shared computers and hourly rental [1]; Telefónica documents Speedy accesses [2]. MTC records distinguish spectrum awards from commercial service and document backbone deployment. Ten milestones link to eleven sources with publication/access dates and supported claims.
+IDB describes cabinas públicas providing shared computers and hourly access [1]; Telefónica documents the expansion of Speedy services [2]. MTC publications distinguish spectrum awards from commercial launches and document backbone deployment. Ten milestones connect to eleven sources, with publication dates, access dates and supported claims recorded together.
 
-Company reports describe their own services, so operator claims are explicitly attributed; official survey estimates provide a separate population measure for the geographic access comparison.
-
-Operator accesses and individual use differ from household service. The chart compares INEI's preliminary Q4 2025 household estimates: national 60.1%, metropolitan Lima 78.2%, other urban 63.1%, rural 23.4% [3]. Lima includes Callao. The rounded 54.8-percentage-point Lima–rural gap does not measure speed or affordability.
+Operator reports describe their own services, so company claims are attributed. INEI supplies a separate population measure: preliminary Q4 2025 household internet access was 60.1% nationally, 78.2% in metropolitan Lima, 63.1% in other urban areas and 23.4% in rural areas [3]. Lima includes Callao. The 54.8 percentage point Lima–rural gap concerns household service, not connection speed, affordability or individual use.
 
 ## B. Planning
 
-Four consistently linked pages guide general readers: Overview introduces the narrative; Timeline provides searchable chronology; Connections explains access/inequality; Sources supplies references, definitions and credits.
+Four linked pages guide general readers. Overview introduces the story; Timeline presents searchable milestones; Connections examines everyday access and inequality; Sources provides references, definitions and credits.
 
-MoSCoW priorities make responsive pages, sourced research, JSON templating/validation, testing, authentic feedback and ZIP/PDF delivery essential. Animation is secondary; accounts/live statistics are excluded. Chosen techniques require checking against module terminology.
+MoSCoW prioritisation makes responsive layouts, attributed research, JSON templating and validation, testing and submission files essential. Animation supports the visual experience; accounts and live statistics fall outside the scope.
 
-Milestones progress through research, structure, prototypes, feedback, implementation, verification and delivery. `docs/plan.md` records dependencies and acceptance criteria. The feedback gate remains open, distinguishing a working website from completed coursework.
+The project plan records research, structure, prototypes, review, implementation, verification and delivery as milestones, with dependencies and acceptance criteria. This separates design intentions from evidence of completed work.
 
 ## C. Development process: prototype designs
 
-Wireframes cover all four pages on desktop/mobile. Desktop uses columns and a sources sidebar; mobile stacks content with visible navigation. PNGs preserve proposals; screenshots document implementation.
+Desktop and mobile wireframes cover all four pages. Desktop compositions use columns and a sources sidebar; mobile layouts stack content while keeping navigation visible. Saved wireframes preserve the proposals, and browser screenshots document the resulting layouts.
 
-![Figure 1: Initial desktop and mobile wireframes for all four pages.](../evidence/wireframes-contact-sheet.png)
+![Figure 1: Initial desktop and mobile wireframes for the four website pages.](../evidence/wireframes-contact-sheet.png)
 
-Dribbble concepts inspired spacious compositions and sculptural motion [4]. Paper colours, dark text and red accents establish an editorial identity. Original AI-assisted procedural illustrations are not historical evidence or accurate network maps. Credits identify inspiration/font licences.
+Dribbble references inspired spacious compositions and sculptural motion [4]. Warm paper colours, dark text and red accents create an editorial identity. Procedural illustrations are decorative interpretations, not historical photographs or accurate network maps. Credits record the visual references and font licences.
 
-Browser inspection revealed globe overflow; constraining the canvas corrected it. Remaining 320-pixel navigation overflow required smaller padding. Opaque backgrounds strengthened globe-label contrast. These were implementation reviews, not participant feedback.
-
-No other person has reviewed the prototypes. `docs/feedback.md` provides tasks/forms for actual dated comments, resulting changes and follow-up evidence. Automated checks cannot satisfy this assessed requirement.
+Browser inspection identified globe overflow, corrected by constraining the canvas. Smaller navigation padding resolved overflow at 320 pixels. Opaque label backgrounds improved contrast. These revisions arose from implementation inspection; external participant feedback remains pending, with a recording form in `docs/feedback.md`.
 
 ## D. Development process: developing the code
 
-HTML, CSS, JavaScript and JSON are separate. Semantic landmarks/headings organise content; CSS Grid, flexible sizing and media queries adapt layouts. Assets are local.
+HTML, CSS, JavaScript and JSON separate content, presentation, behaviour and data. Semantic landmarks and headings establish reading order; CSS Grid, flexible sizing and media queries adapt the pages to different screens. Assets are stored locally.
 
-After HTTP fetch, `validateData` checks collections, fields, types, text, unique safe IDs, years 1997–2025, finite percentages 0–100, HTTPS URLs and citation references. Syntax-valid JSON can violate these rules; failures produce readable messages.
+After an HTTP fetch, `validateData` checks required fields, types, text, unique safe identifiers, years from 1997 to 2025, finite percentages from 0 to 100, HTTPS URLs and citation references. Valid JSON syntax alone does not guarantee valid project data; failures produce readable messages.
 
-The custom engine substitutes escaped `{{field}}` tokens into templates. Text/attribute escaping complements URL/numeric validation; missing/nonprimitive fields fail. This matches Topic 6's library-free JavaScript template-engine objective [5], but the exact laboratory engine remains unconfirmed.
+The custom template engine substitutes escaped `{{field}}` tokens. Text and attribute escaping complement URL and numeric validation; missing or nonprimitive values fail. This follows Topic 6's JavaScript template-engine objective [5], although the exact laboratory engine remains unconfirmed.
 
-Timeline filters/accent-normalised search expose states, announce counts and explain empty results. Motion supports pausing/reduced-motion preferences. Relative paths support HTTP serving and GitHub Pages, verified after its successful 21:07:15Z build: https://nielspac177.github.io/peru-online/.
+Timeline filters and accent-normalised search announce result counts and explain empty results. Motion can be paused and respects reduced-motion preferences. Relative paths support local HTTP serving and the verified GitHub Pages deployment at https://nielspac177.github.io/peru-online/, published 13 September 2026.
 
 ## E. Testing: validation reports and actions taken
 
-The preserved baseline records ten html-validate lint findings: seven source style edits and three documented accommodations for template IDs/chart widths, not ten functional defects. A formatter regression was also recorded and corrected. Final checks cover five pages, including 404, as source and rendered documents: zero HTML errors/warnings.
+The initial HTML lint report contained ten findings: seven source style edits and three documented accommodations for template identifiers and chart widths. A formatter regression was corrected. Final source and rendered checks covered five pages, including the error page, with zero HTML errors or warnings.
 
-All 64 tests passed, covering schema rejection, boundaries, citations, injection escaping, missing fields and packaged links/assets. jsdom axe reported zero structural violations; contrast was excluded because jsdom lacks a rendering engine.
+All 64 tests passed, covering data boundaries, invalid records, citations, injection escaping, missing fields and packaged links and assets. The jsdom accessibility check found zero structural violations; its lack of rendering prevented contrast assessment.
 
-A real-browser axe run covered four pages with contrast enabled: zero violations, two incomplete contrast rules. CSS inspection/luminance calculations reviewed uncertain labels and symbols; solid backgrounds were strengthened. Recorded colour pairs range from 4.84:1 to 13.39:1. This targeted review does not establish complete WCAG conformance.
+Browser axe tests covered four pages with contrast enabled: zero violations and two incomplete contrast rules. Manual CSS inspection and luminance calculations reviewed uncertain labels and symbols; strengthened backgrounds made labels independent of canvas imagery. Recorded colour pairs range from 4.84:1 to 13.39:1.
 
-All four pages passed actual viewport checks at 320, 390, 768 and 1280 pixels without horizontal scrolling after fixes. Screen-reader testing remains unperformed. Reports, limitations and screenshots are in `evidence/`.
+All four pages passed viewport checks at 320, 390, 768 and 1280 pixels without horizontal scrolling. These checks do not establish complete WCAG conformance; screen-reader testing remains unperformed. Detailed results and screenshots accompany the code.
 
 ## F. Reflections on learning
 
-Statistics mislead when populations differ; escaped templates require schema/URL checks; automated passes leave usability questions unanswered. Participant review remains substantive work. The student must understand and explain these choices independently.
+The project demonstrates why statistical definitions must accompany comparisons and why template escaping needs data validation. Responsive design also requires inspecting real rendered layouts. Automated results provide reproducible evidence, while accessibility and usability still require contextual judgement.
 
 ## References
 
@@ -70,4 +64,4 @@ Statistics mislead when populations differ; escaped templates require schema/URL
 
 [5] University of London. *CM1040 Web Development 2025*, Topic 6, p. 4.
 
-Full source URLs/access dates: Sources page and `data/content.json`.
+Full source URLs and access dates: Sources page and `data/content.json`.

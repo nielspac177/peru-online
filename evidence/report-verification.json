@@ -1,9 +1,10 @@
 {
   "pdf": "Peru_Online_Report.pdf",
   "pages": 4,
-  "extractedWordCount": 916,
-  "imageWordsAllowance": 563,
-  "inclusiveWordCount": 1479,
+  "extractedWordCount": 1289,
+  "imageWordsAllowance": 100,
+  "inclusiveWordCount": 1389,
   "limit": 1500,
-  "includes": "body, headers, captions, references, page furniture and conservative count of text within the wireframe image"
+  "includes": "body, headings, references, tables, vector wireframe text, page furniture and a conservative allowance for screenshot text",
+  "design": "Embedded typefaces, vector wireframes, restrained editorial hierarchy and evidence table"
 }
