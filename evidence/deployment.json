@@ -1,28 +1,40 @@
 {
-  "verifiedAt": "2026-09-13",
+  "verifiedAt": "2026-09-13T22:25:24.743Z",
   "repository": "https://github.com/nielspac177/peru-online",
   "site": "https://nielspac177.github.io/peru-online/",
   "buildStatus": "built",
-  "websiteCommit": "4b2ea47d8139aeef98b6acc0e23e3b23ea10432e",
+  "websiteCommit": "5d9c4434a1086c7e8ab5a6933d54fbbbd168be49",
   "checks": [
     {
       "page": "index.html",
+      "url": "https://nielspac177.github.io/peru-online/index.html",
       "records": 3
     },
     {
       "page": "timeline.html",
-      "records": 10,
-      "url": "https://nielspac177.github.io/peru-online/timeline.html"
+      "url": "https://nielspac177.github.io/peru-online/timeline.html",
+      "records": 10
     },
     {
       "page": "connections.html",
-      "records": 4,
-      "url": "https://nielspac177.github.io/peru-online/connections.html"
+      "url": "https://nielspac177.github.io/peru-online/connections.html",
+      "records": 4
     },
     {
       "page": "about.html",
-      "records": 11,
-      "url": "https://nielspac177.github.io/peru-online/about.html"
+      "url": "https://nielspac177.github.io/peru-online/about.html",
+      "records": 11
     }
-  ]
+  ],
+  "reset": {
+    "focus": "search",
+    "query": "",
+    "records": 10,
+    "url": "https://nielspac177.github.io/peru-online/timeline.html"
+  },
+  "nested404Recovery": {
+    "from": "review-check/missing/page",
+    "destination": "https://nielspac177.github.io/peru-online/index.html",
+    "overviewVisible": true
+  }
 }
