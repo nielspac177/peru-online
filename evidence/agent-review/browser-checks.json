@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-13T22:20:10.638Z",
+  "reset": {
+    "clearHidden": true,
+    "era": "all",
+    "focus": "search",
+    "query": "",
+    "records": 10,
+    "url": "http://127.0.0.1:4173/timeline.html"
+  },
+  "motionPaused": {
+    "focus": "motion-toggle",
+    "label": "Resume motion ↻",
+    "pressed": null
+  },
+  "motionResumed": {
+    "focus": "motion-toggle",
+    "label": "Pause motion Ⅱ",
+    "pressed": null
+  },
+  "layouts": [
+    {
+      "clearHeight": 44,
+      "clearWidth": 63.5078125,
+      "documentWidth": 320,
+      "width": 320
+    },
+    {
+      "clearHeight": 44,
+      "clearWidth": 63.5078125,
+      "documentWidth": 390,
+      "width": 390
+    },
+    {
+      "clearHeight": 44,
+      "clearWidth": 63.5078125,
+      "documentWidth": 768,
+      "width": 768
+    },
+    {
+      "clearHeight": 44,
+      "clearWidth": 63.5078125,
+      "documentWidth": 1280,
+      "width": 1280
+    }
+  ],
+  "motionSpacePaused": {
+    "focus": "motion-toggle",
+    "label": "Resume motion ↻"
+  },
+  "motionSpaceResumed": {
+    "focus": "motion-toggle",
+    "label": "Pause motion Ⅱ"
+  }
+}

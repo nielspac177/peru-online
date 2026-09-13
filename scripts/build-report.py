@@ -21,7 +21,7 @@ from reportlab.platypus import (
 from pypdf import PdfReader
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT.parent / 'submission' / 'Peru_Online_Report.pdf'
+OUT = ROOT.parent / 'submission' / 'Peru_Online_Final_Report.pdf'
 OUT.parent.mkdir(exist_ok=True)
 INK = colors.HexColor('#252720')
 RED = colors.HexColor('#9c2d23')
@@ -192,12 +192,15 @@ class VectorWireframes(Flowable):
 
 def results_table():
     audit = json.loads((ROOT/'evidence/tests/browser-axe.json').read_text())
+    tap = (ROOT/'evidence/tests/after/unit-tests.tap').read_text()
+    passed = int(re.search(r'^# pass (\d+)$', tap, re.M).group(1))
+    assert re.search(r'^# fail 0$', tap, re.M), 'Report requires passing test evidence'
     rows = [
         ['CHECK', 'INITIAL RECORD', 'FINAL RECORD'],
         ['Authored HTML · 5 pages', '10 lint findings', '0 findings'],
         ['Rendered HTML · 5 pages', 'Not run', '0 findings'],
         ['Browser axe · 4 pages', '0 violations; 2 incomplete', f"{audit['totals']['violations']} violations; {audit['totals']['incomplete']} incomplete"],
-        ['Unit, data and link tests', 'Not run', '64 passed'],
+        ['Unit, data and link tests', 'Not run', f'{passed} passed'],
     ]
     cells = [[Paragraph(rich(cell), styles['tablehead' if r == 0 else 'table']) for cell in row] for r, row in enumerate(rows)]
     t = Table(cells, colWidths=[189, 149, 149], hAlign='LEFT')

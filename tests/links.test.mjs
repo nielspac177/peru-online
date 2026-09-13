@@ -37,3 +37,22 @@ test('every CSS font and image URL refers to a packaged asset', async () => {
     await assert.doesNotReject(access(new URL(reference, stylesheetUrl)), `Missing CSS asset: ${reference}`);
   }
 });
+
+test('404 recovery links and styling resolve to real site files from nested missing paths', async () => {
+  const document = documents.get('404.html');
+  for (const missingPath of ['missing', 'unknown/deep/missing']) {
+    const request = new URL(`https://nielspac177.github.io/peru-online/${missingPath}`);
+    for (const element of document.querySelectorAll('[href], [src]')) {
+      const reference = element.getAttribute('href') ?? element.getAttribute('src');
+      if (reference.startsWith('#')) {
+        assert.ok(document.getElementById(reference.slice(1)), `Missing 404 in-page target: ${reference}`);
+        continue;
+      }
+      const target = new URL(reference, request);
+      assert.equal(target.origin, request.origin);
+      assert.ok(target.pathname.startsWith('/peru-online/'));
+      const filename = target.pathname.slice('/peru-online/'.length);
+      await assert.doesNotReject(access(new URL(filename, root)), `404 recovery from ${missingPath} points to missing ${target.href}`);
+    }
+  }
+});

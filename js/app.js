@@ -81,6 +81,7 @@ async function loadArchive() {
         ? parameters.get("era")
         : "all";
       const search = document.getElementById("search");
+      const clearFilters = document.getElementById("clear-filters");
       const buttons = [...document.querySelectorAll("[data-era]")];
       const normalise = (s) =>
         s
@@ -89,6 +90,7 @@ async function loadArchive() {
           .toLowerCase();
       function update() {
         const query = normalise(search.value.trim());
+        clearFilters.hidden = era === "all" && search.value.length === 0;
         const visible = milestones.filter(
           (m) =>
             (era === "all" || m.era === era) &&
@@ -102,21 +104,32 @@ async function loadArchive() {
         if (visible.length) renderInto(timeline, "milestone-template", visible);
         else {
           timeline.innerHTML =
-            '<p class="empty-state">No milestones match your search. Try another word or select “All years”.</p>';
+            '<p class="empty-state">No milestones match these filters. Try another word, or use “Clear filters” to show all milestones.</p>';
         }
         document.getElementById("result-count").textContent =
           `${visible.length} OF ${milestones.length} MILESTONES · AGE = YEARS SINCE 1997 (APPROXIMATE)`;
       }
+      function updateEraUrl() {
+        const url = new URL(location.href);
+        if (era === "all") url.searchParams.delete("era");
+        else url.searchParams.set("era", era);
+        history.replaceState(null, "", url);
+      }
       buttons.forEach((button) =>
         button.addEventListener("click", () => {
           era = button.dataset.era;
-          const url = new URL(location.href);
-          if (era === "all") url.searchParams.delete("era");
-          else url.searchParams.set("era", era);
-          history.replaceState(null, "", url);
+          updateEraUrl();
           update();
         }),
       );
+      clearFilters.addEventListener("click", () => {
+        search.value = "";
+        era = "all";
+        updateEraUrl();
+        update();
+        // The reset control is now hidden; keep keyboard focus in the search.
+        search.focus({ preventScroll: true });
+      });
       search.addEventListener("input", update);
       update();
     }

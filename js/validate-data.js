@@ -54,10 +54,12 @@ export function validateData(data) {
     require(url.protocol === "https:" &&
       !url.username &&
       !url.password, `sources[${i}].url must be HTTPS without credentials`);
+    const accessedTime = Date.parse(s.accessed);
+    // Parsing can normalise 31 April to 1 May; round-tripping rejects that.
     require(/^\d{4}-\d{2}-\d{2}$/.test(s.accessed) &&
-      !Number.isNaN(
-        Date.parse(s.accessed),
-      ), `sources[${i}].accessed must be an ISO date`);
+      Number.isFinite(accessedTime) &&
+      new Date(accessedTime).toISOString().slice(0, 10) === s.accessed,
+      `sources[${i}].accessed must be a real ISO calendar date`);
   });
   data.milestones.forEach((m, i) => {
     require(Number.isInteger(m.year) &&

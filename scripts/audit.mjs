@@ -43,7 +43,9 @@ const renderedConfig = {
   // DOM serialization and removing inert templates leave indentation text
   // nodes. Source formatting is checked above; generated whitespace is not
   // an HTML validity or accessibility defect.
-  rules: { ...config.rules, 'no-trailing-whitespace': 'off' },
+  // DOM serialization expands hidden to hidden=""; that is valid HTML.
+  // Enforce formatting preferences in source, not in browser serialization.
+  rules: { ...config.rules, 'no-trailing-whitespace': 'off', 'attribute-boolean-style': 'off' },
 };
 const renderedValidator = new HtmlValidate(renderedConfig);
 const wcagTags = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];

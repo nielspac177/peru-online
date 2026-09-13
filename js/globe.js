@@ -261,7 +261,7 @@ export function startGlobe(canvas, button) {
     cancelAnimationFrame(frame);
     frame = 0;
     last = 0;
-    button.setAttribute("aria-pressed", String(paused));
+    // This action button names what the next activation does.
     button.textContent = paused ? "Resume motion ↻" : "Pause motion Ⅱ";
     draw();
     if (!paused && visible && !document.hidden)

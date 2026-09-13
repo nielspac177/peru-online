@@ -31,4 +31,5 @@ The following changes came from implementation review and browser testing. They 
 | 13 September 2026 | Browser layout inspection | Globe extended beyond desktop and phone viewport | Canvas constrained and mobile minimum height removed | `css/style.css`, `evidence/layout-checks.json` |
 | 13 September 2026 | Browser test at 320px | Four navigation links extended 14px beyond viewport | Reduced link padding at narrowest breakpoint | `css/style.css` |
 | 13 September 2026 | Browser axe contrast review | Canvas underlay made label contrast uncertain to tool | Opaque paper backgrounds added to globe labels | `evidence/contrast-review.json` |
-| Pending | Human participant review | No genuine comments received yet | Pending | `feedback.md` |
+| 13 September 2026 | Independent automated UX/code review | An unmatched search could not recover through All years | Clear filters resets search, era, URL and focus | `feedback.md`, `evidence/agent-review/` |
+| 13 September 2026 | Independent automated UX review | Motion button mixed changing action labels with pressed-state semantics | Native action button announces Pause or Resume | `index.html`, `js/globe.js`, `evidence/agent-review/browser-checks.json` |

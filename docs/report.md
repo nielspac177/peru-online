@@ -26,13 +26,13 @@ Desktop and mobile wireframes cover all four pages. Desktop compositions use col
 
 Dribbble references inspired spacious compositions and sculptural motion [4]. Warm paper colours, dark text and red accents create an editorial identity. Procedural illustrations are decorative interpretations, not historical photographs or accurate network maps. Credits record the visual references and font licences.
 
-Browser inspection identified globe overflow, corrected by constraining the canvas. Smaller navigation padding resolved overflow at 320 pixels. Opaque label backgrounds improved contrast. These revisions arose from implementation inspection; external participant feedback remains pending, with a recording form in `docs/feedback.md`.
+Browser inspection corrected globe overflow, narrow navigation and uncertain label contrast. An automated agent review then identified ineffective search recovery and ambiguous motion-button semantics. Clear filters and action labels resolved these issues; focused checks confirmed the changes. No external participant review was conducted. Findings and responses are recorded in `docs/feedback.md`.
 
 ## D. Development process: developing the code
 
 HTML, CSS, JavaScript and JSON separate content, presentation, behaviour and data. Semantic landmarks and headings establish reading order; CSS Grid, flexible sizing and media queries adapt the pages to different screens. Assets are stored locally.
 
-After an HTTP fetch, `validateData` checks required fields, types, text, unique safe identifiers, years from 1997 to 2025, finite percentages from 0 to 100, HTTPS URLs and citation references. Valid JSON syntax alone does not guarantee valid project data; failures produce readable messages.
+After an HTTP fetch, `validateData` checks required fields, types, unique safe identifiers, years from 1997 to 2025, finite percentages from 0 to 100, real calendar dates, HTTPS URLs and citation references. Valid JSON syntax alone does not guarantee valid project data; failures produce readable messages.
 
 The custom template engine substitutes escaped `{{field}}` tokens. Text and attribute escaping complement URL and numeric validation; missing or nonprimitive values fail. This follows Topic 6's JavaScript template-engine objective [5], although the exact laboratory engine remains unconfirmed.
 
@@ -42,7 +42,7 @@ Timeline filters and accent-normalised search announce result counts and explain
 
 The initial HTML lint report contained ten findings: seven source style edits and three documented accommodations for template identifiers and chart widths. A formatter regression was corrected. Final source and rendered checks covered five pages, including the error page, with zero HTML errors or warnings.
 
-All 64 tests passed, covering data boundaries, invalid records, citations, injection escaping, missing fields and packaged links and assets. The jsdom accessibility check found zero structural violations; its lack of rendering prevented contrast assessment.
+All 70 tests passed, covering data boundaries, invalid calendar dates, citations, injection escaping, filter recovery, nested error-page links and packaged assets. The jsdom accessibility check found zero structural violations; its lack of rendering prevented contrast assessment.
 
 Browser axe tests covered four pages with contrast enabled: zero violations and two incomplete contrast rules. Manual CSS inspection and luminance calculations reviewed uncertain labels and symbols; strengthened backgrounds made labels independent of canvas imagery. Recorded colour pairs range from 4.84:1 to 13.39:1.
 
@@ -50,7 +50,7 @@ All four pages passed viewport checks at 320, 390, 768 and 1280 pixels without h
 
 ## F. Reflections on learning
 
-The project demonstrates why statistical definitions must accompany comparisons and why template escaping needs data validation. Responsive design also requires inspecting real rendered layouts. Automated results provide reproducible evidence, while accessibility and usability still require contextual judgement.
+The project demonstrates why statistical definitions must accompany comparisons and why template escaping needs data validation. Responsive design requires inspecting rendered layouts. The review cycle linked each finding to a change and a rerun, preserving before-and-after evidence. Automated results support reproducibility; accessibility and usability still require contextual judgement.
 
 ## References
 

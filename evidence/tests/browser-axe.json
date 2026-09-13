@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T21:09:03.155Z",
+  "generatedAt": "2026-09-13T22:21:02.225Z",
   "tool": "axe-core 4.10.3 in a real browser",
   "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
   "configuration": {
@@ -62,7 +62,7 @@
               "target": [
                 "#motion-toggle"
               ],
-              "html": "<button id=\"motion-toggle\" type=\"button\" aria-pressed=\"false\">Pause motion Ⅱ</button>",
+              "html": "<button id=\"motion-toggle\" type=\"button\">Pause motion Ⅱ</button>",
               "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
             },
             {

@@ -58,3 +58,13 @@ for (const [collection, field] of [
   invalid(`rejects wrong type for ${collection}.${field}`, data => { data[collection][0][field] = 123; });
 }
 invalid('rejects an unsafe identifier before insertion into an HTML attribute', data => { data.milestones[0].id = '\" onclick=\"alert(1)'; });
+
+// Date.parse normalises some impossible dates instead of rejecting them.
+for (const date of ['2025-02-29', '2025-02-31', '2025-04-31']) {
+  invalid(`rejects a nonexistent calendar date ${date}`, data => { data.sources[0].accessed = date; });
+}
+test('accepts a real leap day in an access date', () => {
+  const data = copy();
+  data.sources[0].accessed = '2024-02-29';
+  assert.doesNotThrow(() => validateData(data));
+});

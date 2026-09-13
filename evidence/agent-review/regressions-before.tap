@@ -2,429 +2,408 @@ TAP version 13
 # Subtest: the researched archive satisfies the schema and is returned for rendering
 ok 1 - the researched archive satisfies the schema and is returned for rendering
   ---
-  duration_ms: 2.429417
+  duration_ms: 1.782708
   type: 'test'
   ...
 # Subtest: both lifetime endpoints and percentage endpoints are valid
 ok 2 - both lifetime endpoints and percentage endpoints are valid
   ---
-  duration_ms: 0.274458
+  duration_ms: 0.390542
   type: 'test'
   ...
 # Subtest: rejects a non-record root (null)
 ok 3 - rejects a non-record root (null)
   ---
-  duration_ms: 0.253416
+  duration_ms: 0.348959
   type: 'test'
   ...
 # Subtest: rejects a non-record root ([])
 ok 4 - rejects a non-record root ([])
   ---
-  duration_ms: 0.047041
+  duration_ms: 0.061542
   type: 'test'
   ...
 # Subtest: rejects a non-record root ("archive")
 ok 5 - rejects a non-record root ("archive")
   ---
-  duration_ms: 0.045583
+  duration_ms: 0.048334
   type: 'test'
   ...
 # Subtest: rejects a non-record root (42)
 ok 6 - rejects a non-record root (42)
   ---
-  duration_ms: 0.037917
+  duration_ms: 0.042958
   type: 'test'
   ...
 # Subtest: rejects a missing milestones collection
 ok 7 - rejects a missing milestones collection
   ---
-  duration_ms: 0.091708
+  duration_ms: 0.112375
   type: 'test'
   ...
 # Subtest: rejects an object instead of the milestones array
 ok 8 - rejects an object instead of the milestones array
   ---
-  duration_ms: 0.070833
+  duration_ms: 0.095916
   type: 'test'
   ...
 # Subtest: rejects an empty milestones collection
 ok 9 - rejects an empty milestones collection
   ---
-  duration_ms: 0.083375
+  duration_ms: 0.088583
   type: 'test'
   ...
 # Subtest: rejects duplicate milestones identifiers
 ok 10 - rejects duplicate milestones identifiers
   ---
-  duration_ms: 0.129875
+  duration_ms: 0.511333
   type: 'test'
   ...
 # Subtest: rejects a missing statistics collection
 ok 11 - rejects a missing statistics collection
   ---
-  duration_ms: 0.076208
+  duration_ms: 0.103208
   type: 'test'
   ...
 # Subtest: rejects an object instead of the statistics array
 ok 12 - rejects an object instead of the statistics array
   ---
-  duration_ms: 0.06275
+  duration_ms: 0.078041
   type: 'test'
   ...
 # Subtest: rejects an empty statistics collection
 ok 13 - rejects an empty statistics collection
   ---
-  duration_ms: 0.053334
+  duration_ms: 0.061792
   type: 'test'
   ...
 # Subtest: rejects duplicate statistics identifiers
 ok 14 - rejects duplicate statistics identifiers
   ---
-  duration_ms: 0.066333
+  duration_ms: 0.066167
   type: 'test'
   ...
 # Subtest: rejects a missing sources collection
 ok 15 - rejects a missing sources collection
   ---
-  duration_ms: 0.047709
+  duration_ms: 0.045458
   type: 'test'
   ...
 # Subtest: rejects an object instead of the sources array
 ok 16 - rejects an object instead of the sources array
   ---
-  duration_ms: 0.041208
+  duration_ms: 0.04625
   type: 'test'
   ...
 # Subtest: rejects an empty sources collection
 ok 17 - rejects an empty sources collection
   ---
-  duration_ms: 0.074042
+  duration_ms: 0.042459
   type: 'test'
   ...
 # Subtest: rejects duplicate sources identifiers
 ok 18 - rejects duplicate sources identifiers
   ---
-  duration_ms: 0.06775
+  duration_ms: 0.053834
   type: 'test'
   ...
 # Subtest: rejects invalid milestone year 1996
 ok 19 - rejects invalid milestone year 1996
   ---
-  duration_ms: 0.089625
+  duration_ms: 0.0965
   type: 'test'
   ...
 # Subtest: rejects invalid milestone year 2026
 ok 20 - rejects invalid milestone year 2026
   ---
-  duration_ms: 0.102541
+  duration_ms: 0.162167
   type: 'test'
   ...
 # Subtest: rejects invalid milestone year 2001.5
 ok 21 - rejects invalid milestone year 2001.5
   ---
-  duration_ms: 0.099042
+  duration_ms: 0.177584
   type: 'test'
   ...
 # Subtest: rejects invalid milestone year "2013"
 ok 22 - rejects invalid milestone year "2013"
   ---
-  duration_ms: 0.088167
+  duration_ms: 0.099125
   type: 'test'
   ...
 # Subtest: rejects invalid milestone year null
 ok 23 - rejects invalid milestone year null
   ---
-  duration_ms: 0.094042
+  duration_ms: 0.111625
   type: 'test'
   ...
 # Subtest: rejects invalid percentage -0.1
 ok 24 - rejects invalid percentage -0.1
   ---
-  duration_ms: 0.090125
+  duration_ms: 0.115542
   type: 'test'
   ...
 # Subtest: rejects invalid percentage 100.1
 ok 25 - rejects invalid percentage 100.1
   ---
-  duration_ms: 0.075458
+  duration_ms: 0.075125
   type: 'test'
   ...
 # Subtest: rejects invalid percentage 78.2
 ok 26 - rejects invalid percentage 78.2
   ---
-  duration_ms: 0.078375
+  duration_ms: 0.078917
   type: 'test'
   ...
 # Subtest: rejects invalid percentage null
 ok 27 - rejects invalid percentage null
   ---
-  duration_ms: 0.101042
+  duration_ms: 0.152042
   type: 'test'
   ...
 # Subtest: rejects invalid percentage NaN
 ok 28 - rejects invalid percentage NaN
   ---
-  duration_ms: 0.076125
+  duration_ms: 0.122958
   type: 'test'
   ...
 # Subtest: rejects invalid percentage Infinity
 ok 29 - rejects invalid percentage Infinity
   ---
-  duration_ms: 0.08
+  duration_ms: 0.095458
   type: 'test'
   ...
 # Subtest: rejects a dangling milestones source reference
 ok 30 - rejects a dangling milestones source reference
   ---
-  duration_ms: 0.107417
+  duration_ms: 0.1245
   type: 'test'
   ...
 # Subtest: rejects a dangling statistics source reference
 ok 31 - rejects a dangling statistics source reference
   ---
-  duration_ms: 0.086625
+  duration_ms: 0.078416
   type: 'test'
   ...
 # Subtest: rejects unsafe or malformed source URL javascript:alert(1)
 ok 32 - rejects unsafe or malformed source URL javascript:alert(1)
   ---
-  duration_ms: 0.06275
+  duration_ms: 0.07375
   type: 'test'
   ...
 # Subtest: rejects unsafe or malformed source URL data:text/html,<h1>unsafe</h1>
 ok 33 - rejects unsafe or malformed source URL data:text/html,<h1>unsafe</h1>
   ---
-  duration_ms: 0.062042
+  duration_ms: 0.060458
   type: 'test'
   ...
 # Subtest: rejects unsafe or malformed source URL ftp://example.org/file
 ok 34 - rejects unsafe or malformed source URL ftp://example.org/file
   ---
-  duration_ms: 0.332875
+  duration_ms: 0.058083
   type: 'test'
   ...
 # Subtest: rejects unsafe or malformed source URL //example.org/file
 ok 35 - rejects unsafe or malformed source URL //example.org/file
   ---
-  duration_ms: 0.113
+  duration_ms: 0.5905
   type: 'test'
   ...
 # Subtest: rejects unsafe or malformed source URL not a URL
 ok 36 - rejects unsafe or malformed source URL not a URL
   ---
-  duration_ms: 0.080167
+  duration_ms: 0.068375
   type: 'test'
   ...
 # Subtest: rejects missing milestones.title
 ok 37 - rejects missing milestones.title
   ---
-  duration_ms: 0.10325
+  duration_ms: 0.086542
   type: 'test'
   ...
 # Subtest: rejects wrong type for milestones.title
 ok 38 - rejects wrong type for milestones.title
   ---
-  duration_ms: 0.083542
+  duration_ms: 0.068833
   type: 'test'
   ...
 # Subtest: rejects missing milestones.body
 ok 39 - rejects missing milestones.body
   ---
-  duration_ms: 0.085958
+  duration_ms: 0.062208
   type: 'test'
   ...
 # Subtest: rejects wrong type for milestones.body
 ok 40 - rejects wrong type for milestones.body
   ---
-  duration_ms: 0.075417
+  duration_ms: 0.065667
   type: 'test'
   ...
 # Subtest: rejects missing milestones.category
 ok 41 - rejects missing milestones.category
   ---
-  duration_ms: 0.074875
+  duration_ms: 0.073
   type: 'test'
   ...
 # Subtest: rejects wrong type for milestones.category
 ok 42 - rejects wrong type for milestones.category
   ---
-  duration_ms: 0.083584
+  duration_ms: 0.073166
   type: 'test'
   ...
 # Subtest: rejects missing statistics.label
 ok 43 - rejects missing statistics.label
   ---
-  duration_ms: 0.088666
+  duration_ms: 0.078291
   type: 'test'
   ...
 # Subtest: rejects wrong type for statistics.label
 ok 44 - rejects wrong type for statistics.label
   ---
-  duration_ms: 0.09425
+  duration_ms: 0.094666
   type: 'test'
   ...
 # Subtest: rejects missing sources.publisher
 ok 45 - rejects missing sources.publisher
   ---
-  duration_ms: 0.065084
+  duration_ms: 0.06225
   type: 'test'
   ...
 # Subtest: rejects wrong type for sources.publisher
 ok 46 - rejects wrong type for sources.publisher
   ---
-  duration_ms: 0.056125
+  duration_ms: 0.06275
   type: 'test'
   ...
 # Subtest: rejects missing sources.title
 ok 47 - rejects missing sources.title
   ---
-  duration_ms: 0.047084
+  duration_ms: 0.052791
   type: 'test'
   ...
 # Subtest: rejects wrong type for sources.title
 ok 48 - rejects wrong type for sources.title
   ---
-  duration_ms: 0.058083
+  duration_ms: 0.057209
   type: 'test'
   ...
 # Subtest: rejects missing sources.supports
 ok 49 - rejects missing sources.supports
   ---
-  duration_ms: 0.050542
+  duration_ms: 0.058
   type: 'test'
   ...
 # Subtest: rejects wrong type for sources.supports
 ok 50 - rejects wrong type for sources.supports
   ---
-  duration_ms: 0.050667
+  duration_ms: 0.0605
   type: 'test'
   ...
 # Subtest: rejects missing sources.accessed
 ok 51 - rejects missing sources.accessed
   ---
-  duration_ms: 0.049458
+  duration_ms: 0.052417
   type: 'test'
   ...
 # Subtest: rejects wrong type for sources.accessed
 ok 52 - rejects wrong type for sources.accessed
   ---
-  duration_ms: 0.0495
+  duration_ms: 0.056459
   type: 'test'
   ...
 # Subtest: rejects an unsafe identifier before insertion into an HTML attribute
 ok 53 - rejects an unsafe identifier before insertion into an HTML attribute
   ---
-  duration_ms: 0.067667
+  duration_ms: 0.062542
   type: 'test'
   ...
 # Subtest: rejects a nonexistent calendar date 2025-02-29
-ok 54 - rejects a nonexistent calendar date 2025-02-29
+not ok 54 - rejects a nonexistent calendar date 2025-02-29
   ---
-  duration_ms: 0.073792
+  duration_ms: 0.418583
   type: 'test'
+  location: '/Users/nielspacheco/Desktop/Classes/UoL/Web_Development/Final_exam/peru-online/tests/data.test.mjs:9:35'
+  failureType: 'testCodeFailure'
+  error: 'Missing expected exception (Error).'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/nielspacheco/Desktop/Classes/UoL/Web_Development/Final_exam/peru-online/tests/data.test.mjs:12:10)
+    Test.runInAsyncScope (node:async_hooks:213:14)
+    Test.run (node:internal/test_runner/test:1106:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:788:18)
+    Test.postRun (node:internal/test_runner/test:1235:19)
+    Test.run (node:internal/test_runner/test:1163:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:788:7)
   ...
 # Subtest: rejects a nonexistent calendar date 2025-02-31
-ok 55 - rejects a nonexistent calendar date 2025-02-31
+not ok 55 - rejects a nonexistent calendar date 2025-02-31
   ---
-  duration_ms: 0.054334
+  duration_ms: 0.127333
   type: 'test'
+  location: '/Users/nielspacheco/Desktop/Classes/UoL/Web_Development/Final_exam/peru-online/tests/data.test.mjs:9:35'
+  failureType: 'testCodeFailure'
+  error: 'Missing expected exception (Error).'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/nielspacheco/Desktop/Classes/UoL/Web_Development/Final_exam/peru-online/tests/data.test.mjs:12:10)
+    Test.runInAsyncScope (node:async_hooks:213:14)
+    Test.run (node:internal/test_runner/test:1106:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:788:18)
+    Test.postRun (node:internal/test_runner/test:1235:19)
+    Test.run (node:internal/test_runner/test:1163:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:788:7)
   ...
 # Subtest: rejects a nonexistent calendar date 2025-04-31
-ok 56 - rejects a nonexistent calendar date 2025-04-31
+not ok 56 - rejects a nonexistent calendar date 2025-04-31
   ---
-  duration_ms: 0.058375
+  duration_ms: 0.112208
   type: 'test'
+  location: '/Users/nielspacheco/Desktop/Classes/UoL/Web_Development/Final_exam/peru-online/tests/data.test.mjs:9:35'
+  failureType: 'testCodeFailure'
+  error: 'Missing expected exception (Error).'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/nielspacheco/Desktop/Classes/UoL/Web_Development/Final_exam/peru-online/tests/data.test.mjs:12:10)
+    Test.runInAsyncScope (node:async_hooks:213:14)
+    Test.run (node:internal/test_runner/test:1106:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:788:18)
+    Test.postRun (node:internal/test_runner/test:1235:19)
+    Test.run (node:internal/test_runner/test:1163:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:788:7)
   ...
 # Subtest: accepts a real leap day in an access date
 ok 57 - accepts a real leap day in an access date
   ---
-  duration_ms: 0.108666
-  type: 'test'
-  ...
-# Subtest: every local page link, stylesheet, image and script refers to a packaged file
-ok 58 - every local page link, stylesheet, image and script refers to a packaged file
-  ---
-  duration_ms: 7.887166
-  type: 'test'
-  ...
-# Subtest: every CSS font and image URL refers to a packaged asset
-ok 59 - every CSS font and image URL refers to a packaged asset
-  ---
-  duration_ms: 0.713708
-  type: 'test'
-  ...
-# Subtest: 404 recovery links and styling resolve to real site files from nested missing paths
-ok 60 - 404 recovery links and styling resolve to real site files from nested missing paths
-  ---
-  duration_ms: 1.131291
+  duration_ms: 0.110125
   type: 'test'
   ...
 # Subtest: clear filters recovers an empty search and resets the URL, era and focus
-ok 61 - clear filters recovers an empty search and resets the URL, era and focus
+not ok 58 - clear filters recovers an empty search and resets the URL, era and focus
   ---
-  duration_ms: 59.525125
+  duration_ms: 53.117041
   type: 'test'
+  location: '/Users/nielspacheco/Desktop/Classes/UoL/Web_Development/Final_exam/peru-online/tests/runtime.test.mjs:10:1'
+  failureType: 'testCodeFailure'
+  error: 'Empty-result recovery needs a clear-filters control'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: ~
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///Users/nielspacheco/Desktop/Classes/UoL/Web_Development/Final_exam/peru-online/tests/runtime.test.mjs:42:12)
+    async Test.run (node:internal/test_runner/test:1113:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3)
   ...
-# Subtest: renders repeated tokens, numerical values, and Unicode text
-ok 62 - renders repeated tokens, numerical values, and Unicode text
-  ---
-  duration_ms: 0.48725
-  type: 'test'
-  ...
-# Subtest: text tokens cannot create injected HTML elements
-ok 63 - text tokens cannot create injected HTML elements
-  ---
-  duration_ms: 27.199708
-  type: 'test'
-  ...
-# Subtest: attribute tokens cannot escape their quoted attribute
-ok 64 - attribute tokens cannot escape their quoted attribute
-  ---
-  duration_ms: 3.6035
-  type: 'test'
-  ...
-# Subtest: existing entity-looking content remains literal text
-ok 65 - existing entity-looking content remains literal text
-  ---
-  duration_ms: 2.433375
-  type: 'test'
-  ...
-# Subtest: escapeHTML safely preserves all HTML-significant characters as text
-ok 66 - escapeHTML safely preserves all HTML-significant characters as text
-  ---
-  duration_ms: 2.284333
-  type: 'test'
-  ...
-# Subtest: substitution treats regular-expression replacement symbols literally
-ok 67 - substitution treats regular-expression replacement symbols literally
-  ---
-  duration_ms: 2.276417
-  type: 'test'
-  ...
-# Subtest: missing fields fail instead of silently publishing incomplete content
-ok 68 - missing fields fail instead of silently publishing incomplete content
-  ---
-  duration_ms: 0.216666
-  type: 'test'
-  ...
-# Subtest: inherited properties cannot supply template data
-ok 69 - inherited properties cannot supply template data
-  ---
-  duration_ms: 0.062625
-  type: 'test'
-  ...
-# Subtest: object or function values cannot become template content
-ok 70 - object or function values cannot become template content
-  ---
-  duration_ms: 0.228292
-  type: 'test'
-  ...
-1..70
-# tests 70
+1..58
+# tests 58
 # suites 0
-# pass 70
-# fail 0
+# pass 54
+# fail 4
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 312.752833
+# duration_ms 306.626125

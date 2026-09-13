@@ -56,4 +56,8 @@ Separate data, presentation and behaviour. Store repeatable chronology/source co
 - `docs/wireframes.html`: initial proposed desktop and mobile designs for all four pages.
 - `evidence/wireframes-*.svg`: original editable vector evidence.
 - `docs/design-revisions.md`: initial assumptions and revision log.
-- `docs/feedback.md`: real-review protocol and unfilled capture form.
+- `docs/feedback.md`: completed automated review, changes and measured outcomes.
+
+## Delivery status
+
+Research, four-page implementation, responsive prototypes, technical verification, ZIP, PDF and publication are complete. Automated agents reviewed the working implementation and verified fixes. Gate 3 (feedback from other people) remains unmet; the automated review is recorded separately. The exact laboratory template engine still needs comparison with module materials.

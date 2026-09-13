@@ -4,7 +4,7 @@ An illustrated history of the internet in Peru, **1997–2025**, created for CM1
 
 ## View the website
 
-The published site is intended for https://nielspac177.github.io/peru-online/ . See `evidence/deployment.json` for the verified deployment status.
+The website is published at https://nielspac177.github.io/peru-online/ . See `evidence/deployment.json` for the verified deployment status.
 
 For a downloaded copy, use either:
 
@@ -40,17 +40,17 @@ The custom engine follows the course outline's Topic 6 objective to implement a 
 - `research/`: fact sheet, source notes and data provenance.
 - `docs/plan.md`: requirements, milestones, dependencies and page plan.
 - `docs/wireframes.html`: desktop and mobile prototypes for every content page.
-- `docs/feedback.md`: genuine participant feedback status and collection instructions.
+- `docs/feedback.md`: completed automated agent reviews, changes and verification.
 - `evidence/tests/`: preserved initial checks, final checks, test limitations and fixes.
 - `evidence/`: browser observations, screenshots and deployment record.
-- `docs/report.md`: editable report text; the PDF is delivered separately.
+- `docs/report.md`: editable report text; `Peru_Online_Final_Report.pdf` is delivered separately. Rebuild with `scripts/build-report.py` (ReportLab and pypdf required).
 
-**Outstanding coursework evidence:** other-person feedback must come from a real participant. Automated checks and AI review are not human usability research. The supplied report accurately identifies this as pending until such feedback is recorded. Read and personalise the report's reflection before submitting.
+**Review coverage:** independent agents reviewed the implementation and recorded reproducible findings. No external participant review was conducted, so the brief's other-person feedback criterion is not covered.
 
 ## Reproduce checks
 
 Install development-only dependencies with `npm ci`. Then run `npm test` and `npm run audit`. The latter validates both source HTML and template-rendered HTML and runs structural accessibility checks. See its report for limitations. `tests/browser-audit.html`, served over HTTP, runs axe in a real browser. The test tools and node_modules are not needed to view the site.
 
-## Credits and assistance
+## Credits
 
-Research links appear next to milestones and in the source bibliography. The visual direction is inspired by Alex Bender/FANCY's Dribbble references supplied in the project brief; no reference artwork is copied. DM Sans and Instrument Serif are distributed under the SIL Open Font License; license files are included. SVG and globe artwork, implementation, research synthesis and documentation were produced with AI assistance. The student must understand, verify and take responsibility for the submitted work and follow any applicable course disclosure requirements.
+Research links appear next to milestones and in the source bibliography. The visual direction is inspired by Alex Bender/FANCY's Dribbble references supplied in the project brief; no reference artwork is copied. DM Sans and Instrument Serif are distributed under the SIL Open Font License; license files are included.

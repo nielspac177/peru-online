@@ -56,7 +56,7 @@ that intermediate audit (66 source lint/style findings). The generated-DOM
 check also reported nine whitespace-only serialization findings. Whitespace
 style is now enforced on authored files only, because DOM serialization and
 removing inert templates introduce indentation text nodes; all structural
-HTML rules remain enabled on the generated document.
+HTML rules remain enabled on the generated document. Boolean-attribute style is also enforced only in source: DOM serialization expands `hidden` to the equally valid `hidden=""`. This formatting accommodation does not disable structural validation.
 
 `after/source-baseline.json` records zero findings under that documented profile.
 `after/report.json` records the successful final run: five pages, each checked
@@ -69,12 +69,12 @@ tool versions, complete finding details and incomplete rules are in each report.
 
 ## Coverage and limits
 
-All 64 Node tests passed; `after/unit-tests.tap` is their actual TAP output.
+All 70 Node tests passed; `after/unit-tests.tap` is their actual TAP output.
 The tests exercise the actual data contract: invalid types, required fields,
 empty collections, lifetime and percentage ranges, duplicate identifiers, unsafe
 source URLs, dangling citations, and unsafe anchors. They also parse template
 outputs to verify that malicious text cannot create HTML or escape an attribute.
-Local-link tests check the packaged pages, files, fonts and citation anchors.
+Local-link tests check the packaged pages, files, fonts and citation anchors. Additional regression tests reject calendar rollover dates, accept a valid leap day, verify search/era reset and check recovery URLs at nested 404 paths.
 
 The jsdom audit explicitly disables colour contrast because jsdom has no layout
 or paint engine. Zero jsdom violations say nothing about colour contrast, reflow,
