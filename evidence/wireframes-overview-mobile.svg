@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="1280" viewBox="0 0 390 1280" role="img" aria-labelledby="title desc">
+<title id="title">Overview — mobile proposed wireframe</title>
+<desc id="desc">Original initial layout proposal. Boxes and short labels indicate hierarchy; this is not a screenshot of the completed website.</desc>
+<rect width="390" height="1280" fill="#f4f1e9"/>
+<text x="24" y="35" font-size="21" fill="#21241f" font-family="Georgia,serif">PERU ONLINE</text>
+<text x="24" y="69" font-size="13" fill="#21241f" font-family="Helvetica,sans-serif">Overview   Timeline</text>
+<text x="24" y="94" font-size="13" fill="#21241f" font-family="Helvetica,sans-serif">Connections   Sources &amp; project</text>
+<line x1="24" y1="114" x2="366" y2="114" stroke="#c5c1b7"/>
+<text x="24" y="153" font-size="11" fill="#ad281b" font-family="Helvetica,sans-serif">INITIAL PROPOSAL  /  1997–2025</text>
+<text x="24" y="209" font-size="43" fill="#21241f" font-family="Georgia,serif">A country</text>
+<text x="24" y="261" font-size="43" fill="#21241f" font-family="Georgia,serif">coming online.</text>
+<rect x="24" y="298" width="342" height="3" fill="#c5c1b7"/>
+<rect x="24" y="313" width="342" height="3" fill="#c5c1b7"/>
+<rect x="24" y="328" width="246.23999999999998" height="3" fill="#c5c1b7"/>
+<rect x="24" y="358" width="210" height="48" fill="#e7e3d9" stroke="#c5c1b7"/>
+<text x="42" y="388" font-size="13" fill="#21241f" font-family="Helvetica,sans-serif">Explore the timeline →</text>
+<circle cx="195" cy="568" r="127" fill="#e7e3d9" stroke="#ad281b" stroke-width="2"/>
+<ellipse cx="195" cy="568" rx="38.1" ry="127" fill="none" stroke="#ad281b"/>
+<ellipse cx="195" cy="568" rx="127" ry="38.1" fill="none" stroke="#ad281b"/>
+<ellipse cx="195" cy="568" rx="82.55" ry="127" fill="none" stroke="#ad281b"/>
+<ellipse cx="195" cy="568" rx="127" ry="82.55" fill="none" stroke="#ad281b"/>
+<circle cx="150.55" cy="599.75" r="7" fill="#ad281b"/>
+<text x="24" y="722" font-size="25" fill="#21241f" font-family="Georgia,serif">From shared screens to</text>
+<text x="24" y="753" font-size="25" fill="#21241f" font-family="Georgia,serif">everyday connection.</text>
+<line x1="24" y1="789" x2="366" y2="789" stroke="#c5c1b7"/>
+<text x="24" y="822" font-size="20" fill="#21241f" font-family="Georgia,serif">01  The chronology</text>
+<rect x="24" y="847" width="342" height="3" fill="#c5c1b7"/>
+<rect x="24" y="862" width="246.23999999999998" height="3" fill="#c5c1b7"/>
+<line x1="24" y1="899" x2="366" y2="899" stroke="#c5c1b7"/>
+<text x="24" y="932" font-size="20" fill="#21241f" font-family="Georgia,serif">02  Everyday connections</text>
+<rect x="24" y="957" width="342" height="3" fill="#c5c1b7"/>
+<rect x="24" y="972" width="246.23999999999998" height="3" fill="#c5c1b7"/>
+<line x1="24" y1="1009" x2="366" y2="1009" stroke="#c5c1b7"/>
+<text x="24" y="1042" font-size="20" fill="#21241f" font-family="Georgia,serif">03  The sources</text>
+<rect x="24" y="1067" width="342" height="3" fill="#c5c1b7"/>
+<rect x="24" y="1082" width="246.23999999999998" height="3" fill="#c5c1b7"/>
+<line x1="24" y1="1215" x2="366" y2="1215" stroke="#c5c1b7"/>
+<text x="24" y="1244" font-size="11" fill="#21241f" font-family="Helvetica,sans-serif">PERU ONLINE  /  proposed layout</text>
+<text x="24" y="1264" font-size="9" fill="#21241f" font-family="Helvetica,sans-serif">Original wireframe · desktop / mobile study</text>
+</svg>

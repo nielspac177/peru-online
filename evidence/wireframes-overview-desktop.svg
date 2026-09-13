@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1010" viewBox="0 0 1200 1010" role="img" aria-labelledby="title desc">
+<title id="title">Overview — desktop proposed wireframe</title>
+<desc id="desc">Original initial layout proposal. Boxes and short labels indicate hierarchy; this is not a screenshot of the completed website.</desc>
+<rect width="1200" height="1010" fill="#f4f1e9"/>
+<text x="60" y="35" font-size="21" fill="#21241f" font-family="Georgia,serif">PERU ONLINE</text>
+<text x="550" y="35" font-size="15" fill="#21241f" font-family="Helvetica,sans-serif">Overview       Timeline       Connections       Sources &amp; project</text>
+<line x1="60" y1="58" x2="1140" y2="58" stroke="#c5c1b7"/>
+<text x="60" y="110" font-size="11" fill="#ad281b" font-family="Helvetica,sans-serif">INITIAL PROPOSAL  /  1997–2025</text>
+<text x="60" y="166" font-size="72" fill="#21241f" font-family="Georgia,serif">A country</text>
+<text x="60" y="218" font-size="72" fill="#21241f" font-family="Georgia,serif">coming online.</text>
+<rect x="60" y="270" width="455" height="3" fill="#c5c1b7"/>
+<rect x="60" y="285" width="455" height="3" fill="#c5c1b7"/>
+<rect x="60" y="300" width="455" height="3" fill="#c5c1b7"/>
+<rect x="60" y="315" width="327.59999999999997" height="3" fill="#c5c1b7"/>
+<rect x="60" y="362" width="225" height="50" fill="#e7e3d9" stroke="#c5c1b7"/>
+<text x="78" y="392" font-size="13" fill="#21241f" font-family="Helvetica,sans-serif">Explore the timeline →</text>
+<circle cx="875" cy="315" r="192" fill="#e7e3d9" stroke="#ad281b" stroke-width="2"/>
+<ellipse cx="875" cy="315" rx="57.599999999999994" ry="192" fill="none" stroke="#ad281b"/>
+<ellipse cx="875" cy="315" rx="192" ry="57.599999999999994" fill="none" stroke="#ad281b"/>
+<ellipse cx="875" cy="315" rx="124.80000000000001" ry="192" fill="none" stroke="#ad281b"/>
+<ellipse cx="875" cy="315" rx="192" ry="124.80000000000001" fill="none" stroke="#ad281b"/>
+<circle cx="807.8" cy="363.0" r="7" fill="#ad281b"/>
+<line x1="60" y1="570" x2="1140" y2="570" stroke="#c5c1b7"/>
+<text x="60" y="620" font-size="36" fill="#21241f" font-family="Georgia,serif">From shared screens to everyday connection.</text>
+<text x="60" y="690" font-size="23" fill="#21241f" font-family="Georgia,serif">01  The chronology</text>
+<rect x="60" y="723" width="310" height="3" fill="#c5c1b7"/>
+<rect x="60" y="738" width="310" height="3" fill="#c5c1b7"/>
+<rect x="60" y="753" width="310" height="3" fill="#c5c1b7"/>
+<rect x="60" y="768" width="223.2" height="3" fill="#c5c1b7"/>
+<text x="60" y="810" font-size="14" fill="#ad281b" font-family="Helvetica,sans-serif">Explore this chapter →</text>
+<text x="425" y="690" font-size="23" fill="#21241f" font-family="Georgia,serif">02  Everyday connections</text>
+<rect x="425" y="723" width="310" height="3" fill="#c5c1b7"/>
+<rect x="425" y="738" width="310" height="3" fill="#c5c1b7"/>
+<rect x="425" y="753" width="310" height="3" fill="#c5c1b7"/>
+<rect x="425" y="768" width="223.2" height="3" fill="#c5c1b7"/>
+<text x="425" y="810" font-size="14" fill="#ad281b" font-family="Helvetica,sans-serif">Explore this chapter →</text>
+<text x="790" y="690" font-size="23" fill="#21241f" font-family="Georgia,serif">03  The sources</text>
+<rect x="790" y="723" width="310" height="3" fill="#c5c1b7"/>
+<rect x="790" y="738" width="310" height="3" fill="#c5c1b7"/>
+<rect x="790" y="753" width="310" height="3" fill="#c5c1b7"/>
+<rect x="790" y="768" width="223.2" height="3" fill="#c5c1b7"/>
+<text x="790" y="810" font-size="14" fill="#ad281b" font-family="Helvetica,sans-serif">Explore this chapter →</text>
+<line x1="60" y1="945" x2="1140" y2="945" stroke="#c5c1b7"/>
+<text x="60" y="974" font-size="11" fill="#21241f" font-family="Helvetica,sans-serif">PERU ONLINE  /  proposed layout</text>
+<text x="60" y="994" font-size="9" fill="#21241f" font-family="Helvetica,sans-serif">Original wireframe · desktop / mobile study</text>
+</svg>

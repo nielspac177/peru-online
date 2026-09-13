@@ -1,0 +1,68 @@
+{
+  "date": "2026-09-13",
+  "method": "WCAG relative luminance formula, sRGB; authored CSS colour pairs, not a complete screenshot pixel audit",
+  "results": [
+    {
+      "pair": "Body ink on paper",
+      "foreground": "#252720",
+      "background": "#f4f1e9",
+      "ratio": 13.39,
+      "normalTextAA": true
+    },
+    {
+      "pair": "Muted text on paper",
+      "foreground": "#62635b",
+      "background": "#f4f1e9",
+      "ratio": 5.38,
+      "normalTextAA": true
+    },
+    {
+      "pair": "Red text on paper",
+      "foreground": "#a52b1f",
+      "background": "#f4f1e9",
+      "ratio": 6.27,
+      "normalTextAA": true
+    },
+    {
+      "pair": "Light text on red button",
+      "foreground": "#f4f1e9",
+      "background": "#a52b1f",
+      "ratio": 6.27,
+      "normalTextAA": true
+    },
+    {
+      "pair": "Caption on cabina artwork background",
+      "foreground": "#252720",
+      "background": "#ddd9cb",
+      "ratio": 10.69,
+      "normalTextAA": true
+    },
+    {
+      "pair": "Caption on mobile artwork background",
+      "foreground": "#252720",
+      "background": "#e4e2db",
+      "ratio": 11.66,
+      "normalTextAA": true
+    },
+    {
+      "pair": "Caption on terrain artwork background",
+      "foreground": "#252720",
+      "background": "#d9d7c5",
+      "ratio": 10.42,
+      "normalTextAA": true
+    },
+    {
+      "pair": "Muted text on data band",
+      "foreground": "#62635b",
+      "background": "#e9e5dc",
+      "ratio": 4.84,
+      "normalTextAA": true
+    }
+  ],
+  "manualNotes": [
+    "The incomplete axe nodes are overlaid labels and non-text arrow/search characters. Labels use dark ink or muted text against pale backgrounds.",
+    "Globe captions and the Lima label now use an opaque paper background, making contrast independent of underlying canvas pixels.",
+    "Artwork captions occupy the uniform lower background, away from device shapes.",
+    "Arrow/search glyphs use the body ink colour."
+  ]
+}

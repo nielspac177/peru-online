@@ -1,0 +1,244 @@
+{
+  "generatedAt": "2026-09-13T20:53:06.375Z",
+  "phase": "before",
+  "scope": "Authored HTML before JavaScript content is loaded",
+  "tools": {
+    "html-validate": "10.1.2",
+    "axe-core": "4.10.3",
+    "jsdom": "26.1.0"
+  },
+  "htmlConfiguration": {
+    "extends": [
+      "html-validate:recommended"
+    ]
+  },
+  "accessibilityConfiguration": {
+    "wcagTags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "disabledRules": [
+      "color-contrast"
+    ]
+  },
+  "limitations": [
+    "jsdom does not implement a browser layout/paint engine. Colour contrast is explicitly disabled, not recorded as passing.",
+    "Keyboard navigation, focus visibility, target size, zoom/reflow, motion, and screen-reader usability require separate browser/manual checks.",
+    "An automated report with no violations does not establish WCAG conformance.",
+    "Rendered checks use the production template engine and data validator directly. They do not execute browser module loading, search, filtering, or animation.",
+    "HTML source line numbers refer to the source; rendered HTML line numbers refer to the serialized DOM."
+  ],
+  "inputHashes": {
+    "index.html": "83b716a1aac8b2be9b3cb417b9caa43de05b58c110f6b711a84f09f3fc68fdda",
+    "timeline.html": "d44d94d1aac54fd74c541afc178dc834ce1eb2a91f218ddca4131313910b529a",
+    "connections.html": "e767b01eb4ccc768f43b9565aa8a9ffc9f7781307001cd74fa665264d1bc519a",
+    "about.html": "0966bc0dcc2fce5ab43e6584d82781c27da6e6137f426953827db9bf37bfbe98",
+    "404.html": "154d2ae664db395789632e0d39a8c843d463310fb8e0f32fdb42a9530fec65c9"
+  },
+  "pages": [
+    {
+      "page": "index.html",
+      "source": {
+        "html": {
+          "valid": false,
+          "errorCount": 1,
+          "warningCount": 0,
+          "messages": [
+            {
+              "ruleId": "doctype-style",
+              "severity": 2,
+              "message": "DOCTYPE should be uppercase",
+              "line": 1,
+              "column": 1,
+              "selector": null,
+              "ruleUrl": "https://html-validate.org/rules/doctype-style.html"
+            }
+          ]
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 22,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 39,
+          "violations": [],
+          "incomplete": []
+        }
+      }
+    },
+    {
+      "page": "timeline.html",
+      "source": {
+        "html": {
+          "valid": false,
+          "errorCount": 2,
+          "warningCount": 0,
+          "messages": [
+            {
+              "ruleId": "doctype-style",
+              "severity": 2,
+              "message": "DOCTYPE should be uppercase",
+              "line": 1,
+              "column": 1,
+              "selector": null,
+              "ruleUrl": "https://html-validate.org/rules/doctype-style.html"
+            },
+            {
+              "ruleId": "valid-id",
+              "severity": 2,
+              "message": "element id \"event-{{id}}\" must only contain letters, digits, dash and underscore characters",
+              "line": 34,
+              "column": 68,
+              "selector": "#event-\\{\\{id\\}\\}",
+              "ruleUrl": "https://html-validate.org/rules/valid-id.html"
+            }
+          ]
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 22,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 39,
+          "violations": [],
+          "incomplete": []
+        }
+      }
+    },
+    {
+      "page": "connections.html",
+      "source": {
+        "html": {
+          "valid": false,
+          "errorCount": 2,
+          "warningCount": 0,
+          "messages": [
+            {
+              "ruleId": "doctype-style",
+              "severity": 2,
+              "message": "DOCTYPE should be uppercase",
+              "line": 1,
+              "column": 1,
+              "selector": null,
+              "ruleUrl": "https://html-validate.org/rules/doctype-style.html"
+            },
+            {
+              "ruleId": "no-inline-style",
+              "severity": 2,
+              "message": "Inline style is not allowed",
+              "line": 32,
+              "column": 180,
+              "selector": "#bar-template > div > div:nth-child(2) > span",
+              "ruleUrl": "https://html-validate.org/rules/no-inline-style.html"
+            }
+          ]
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 19,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 42,
+          "violations": [],
+          "incomplete": []
+        }
+      }
+    },
+    {
+      "page": "about.html",
+      "source": {
+        "html": {
+          "valid": false,
+          "errorCount": 3,
+          "warningCount": 0,
+          "messages": [
+            {
+              "ruleId": "doctype-style",
+              "severity": 2,
+              "message": "DOCTYPE should be uppercase",
+              "line": 1,
+              "column": 1,
+              "selector": null,
+              "ruleUrl": "https://html-validate.org/rules/doctype-style.html"
+            },
+            {
+              "ruleId": "no-raw-characters",
+              "severity": 2,
+              "message": "Raw \"&\" must be encoded as \"&amp;\"",
+              "line": 8,
+              "column": 18,
+              "selector": "html > head > title",
+              "ruleUrl": "https://html-validate.org/rules/no-raw-characters.html"
+            },
+            {
+              "ruleId": "valid-id",
+              "severity": 2,
+              "message": "element id \"{{id}}\" must begin with a letter",
+              "line": 29,
+              "column": 67,
+              "selector": "#\\{\\{id\\}\\}",
+              "ruleUrl": "https://html-validate.org/rules/valid-id.html"
+            }
+          ]
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 17,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 44,
+          "violations": [],
+          "incomplete": []
+        }
+      }
+    },
+    {
+      "page": "404.html",
+      "source": {
+        "html": {
+          "valid": false,
+          "errorCount": 2,
+          "warningCount": 0,
+          "messages": [
+            {
+              "ruleId": "doctype-style",
+              "severity": 2,
+              "message": "DOCTYPE should be uppercase",
+              "line": 1,
+              "column": 1,
+              "selector": null,
+              "ruleUrl": "https://html-validate.org/rules/doctype-style.html"
+            },
+            {
+              "ruleId": "no-trailing-whitespace",
+              "severity": 2,
+              "message": "Trailing whitespace",
+              "line": 27,
+              "column": 1,
+              "selector": null,
+              "ruleUrl": "https://html-validate.org/rules/no-trailing-whitespace.html"
+            }
+          ]
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 14,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 47,
+          "violations": [],
+          "incomplete": []
+        }
+      }
+    }
+  ],
+  "totals": {
+    "htmlErrors": 10,
+    "htmlWarnings": 0,
+    "axeViolations": 0,
+    "axeIncomplete": 0
+  }
+}

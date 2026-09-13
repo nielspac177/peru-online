@@ -1,0 +1,160 @@
+{
+  "generatedAt": "2026-09-13T20:57:30.969Z",
+  "phase": "after",
+  "scope": "Authored HTML before JavaScript content is loaded",
+  "tools": {
+    "html-validate": "10.1.2",
+    "axe-core": "4.10.3",
+    "jsdom": "26.1.0"
+  },
+  "htmlConfiguration": {
+    "extends": [
+      "html-validate:recommended"
+    ],
+    "rules": {
+      "no-inline-style": [
+        "error",
+        {
+          "allowedProperties": [
+            "width"
+          ]
+        }
+      ]
+    }
+  },
+  "templateHandling": "Authored id=\"{{id}}\" and id=\"event-{{id}}\" attributes are marked DynamicValue through the validator API. Rendered documents have inert template definitions removed and all generated IDs checked strictly.",
+  "accessibilityConfiguration": {
+    "wcagTags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "disabledRules": [
+      "color-contrast"
+    ]
+  },
+  "limitations": [
+    "jsdom does not implement a browser layout/paint engine. Colour contrast is explicitly disabled, not recorded as passing.",
+    "Keyboard navigation, focus visibility, target size, zoom/reflow, motion, and screen-reader usability require separate browser/manual checks.",
+    "An automated report with no violations does not establish WCAG conformance.",
+    "Rendered checks use the production template engine and data validator directly. They do not execute browser module loading, search, filtering, or animation.",
+    "HTML source line numbers refer to the source; rendered HTML line numbers refer to the serialized DOM."
+  ],
+  "inputHashes": {
+    "index.html": "76465456462dc74a452b32eeb68985b18cb26d4b5f714eae806a661a0fe458a2",
+    "timeline.html": "3022f72a10c3804506401c962e44f00bc8103b9b4d8b08e9babbe2a61b3c17ba",
+    "connections.html": "5f0c565c2072bacdeccab56c97b27591c5d1ee12b25b3086cc87a38b82dce553",
+    "about.html": "0f55b2231a4a62806f7a74cc5fdd6b8b8105836399396f88fdb1cd27a951d679",
+    "404.html": "699d9ad7ab394df7570bb8cce621deb94eceb3019c66c2dbe0e5896d9e3fa907"
+  },
+  "pages": [
+    {
+      "page": "index.html",
+      "source": {
+        "html": {
+          "valid": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "messages": []
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 22,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 39,
+          "violations": [],
+          "incomplete": []
+        }
+      }
+    },
+    {
+      "page": "timeline.html",
+      "source": {
+        "html": {
+          "valid": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "messages": []
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 22,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 39,
+          "violations": [],
+          "incomplete": []
+        }
+      }
+    },
+    {
+      "page": "connections.html",
+      "source": {
+        "html": {
+          "valid": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "messages": []
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 19,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 42,
+          "violations": [],
+          "incomplete": []
+        }
+      }
+    },
+    {
+      "page": "about.html",
+      "source": {
+        "html": {
+          "valid": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "messages": []
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 17,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 44,
+          "violations": [],
+          "incomplete": []
+        }
+      }
+    },
+    {
+      "page": "404.html",
+      "source": {
+        "html": {
+          "valid": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "messages": []
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 14,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 47,
+          "violations": [],
+          "incomplete": []
+        }
+      }
+    }
+  ],
+  "totals": {
+    "htmlErrors": 0,
+    "htmlWarnings": 0,
+    "axeViolations": 0,
+    "axeIncomplete": 0
+  }
+}

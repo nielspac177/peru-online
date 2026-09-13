@@ -1,0 +1,232 @@
+{
+  "milestones": [
+    {
+      "id": "cabinas-1997",
+      "year": 1997,
+      "title": "An internet shared by the hour",
+      "body": "A contemporary IDB account describes Peru's cabinas públicas: shared computers rented by the hour, with instruction and email services. The model offered a route online for people without their own computer or telephone line.",
+      "note": "The starting year matches the author's birth year. It is not the year the internet began in Peru.",
+      "category": "community",
+      "sourceId": "idb-1997"
+    },
+    {
+      "id": "speedy-2002",
+      "year": 2002,
+      "title": "Broadband begins to grow",
+      "body": "Telefónica del Perú reported 20,800 Speedy accesses in 2002, compared with 1,875 in 2001. Its annual report described Speedy as a high-speed internet service with a flat rate.",
+      "note": "These are one operator's service accesses, not the number of internet users in Peru.",
+      "category": "infrastructure",
+      "sourceId": "telefonica-2002"
+    },
+    {
+      "id": "cabinas-2006",
+      "year": 2006,
+      "title": "Cabinas reach more households",
+      "body": "For October–December 2006, INEI findings relayed by OSIPTEL indicated that 61.2% of Lima households had at least one member who used a public internet cabina, compared with 40.7% a year earlier.",
+      "note": "This measures household participation in Lima, not national home internet subscriptions.",
+      "category": "community",
+      "sourceId": "osiptel-cabinas-2007"
+    },
+    {
+      "id": "broadband-law-2012",
+      "year": 2012,
+      "title": "A national broadband ambition",
+      "body": "Published on 20 July 2012, Law 29904 promoted broadband and the construction of Peru's National Fibre Optic Backbone. The law gave a formal framework to the country's backbone project.",
+      "note": "A policy milestone; publication of the law did not itself connect every household.",
+      "category": "infrastructure",
+      "sourceId": "law-29904"
+    },
+    {
+      "id": "lte-2013",
+      "year": 2013,
+      "title": "Spectrum for the 4G transition",
+      "body": "In July 2013, Peru awarded two spectrum blocks in the 1.7/2.1 GHz band for mobile broadband. Telefónica's 2013 report separately lists 4G pre-sales, with service scheduled to operate from 2 January 2014.",
+      "note": "The spectrum award and commercial service are different milestones. See the linked MTC record and the Telefónica 2013 source.",
+      "category": "mobile",
+      "sourceId": "mtc-4g"
+    },
+    {
+      "id": "backbone-2016",
+      "year": 2016,
+      "title": "Fibre crosses the country",
+      "body": "The Ministry of Transport and Communications records completion of the National Fibre Optic Backbone's deployment phase in September 2016. The project involved approximately 13,500 kilometres of fibre and entered its carrier-service phase.",
+      "note": "A backbone transports communications between networks; it does not directly represent household connections.",
+      "category": "infrastructure",
+      "sourceId": "mtc-backbone"
+    },
+    {
+      "id": "ipt-2019",
+      "year": 2019,
+      "title": "A rural network opens in Moya",
+      "body": "Internet para Todos launched its first connection platform in Moya, Huancavelica, on 28 June 2019. The partnership brought together Telefónica, Facebook, IDB Invest and CAF to expand rural mobile broadband infrastructure.",
+      "note": "This is a documented local launch, not a claim that rural Peru was fully connected.",
+      "category": "community",
+      "sourceId": "idb-ipt-2019"
+    },
+    {
+      "id": "lockdown-2020",
+      "year": 2020,
+      "title": "Lockdown changes network demand",
+      "body": "OSIPTEL reported that data traffic during 16–20 March 2020 rose by 9–21% on mobile networks and 30–36% on fixed networks compared with the previous week, as Peru entered quarantine.",
+      "note": "These short-term traffic increases measure network use, not the share of people connected.",
+      "category": "mobile",
+      "sourceId": "osiptel-2020"
+    },
+    {
+      "id": "fibre-2024",
+      "year": 2024,
+      "title": "Fibre leads fixed internet",
+      "body": "At the end of 2024, OSIPTEL counted 4,069,739 fixed internet connections in Peru. Fibre accounted for 73.84% of that market, making it the most-used technology for fixed internet connections.",
+      "note": "Connections include residential and business services; one connection can serve several people.",
+      "category": "infrastructure",
+      "sourceId": "osiptel-fibre-2024"
+    },
+    {
+      "id": "divide-2025",
+      "year": 2025,
+      "title": "Progress remains uneven",
+      "body": "INEI's fourth-quarter 2025 survey estimated internet service in 60.1% of Peru's households. The same measure was 78.2% in metropolitan Lima and 23.4% in rural areas: a gap of 54.8 percentage points.",
+      "note": "Preliminary ENAHO estimates, published in March 2026. This is household access, not individual internet use.",
+      "category": "community",
+      "sourceId": "inei-2025"
+    }
+  ],
+  "statistics": [
+    {
+      "id": "national",
+      "label": "National",
+      "value": 60.1,
+      "sourceId": "inei-2025"
+    },
+    {
+      "id": "lima",
+      "label": "Lima Metropolitan",
+      "value": 78.2,
+      "sourceId": "inei-2025"
+    },
+    {
+      "id": "other-urban",
+      "label": "Other urban areas",
+      "value": 63.1,
+      "sourceId": "inei-2025"
+    },
+    {
+      "id": "rural",
+      "label": "Rural areas",
+      "value": 23.4,
+      "sourceId": "inei-2025"
+    }
+  ],
+  "sources": [
+    {
+      "id": "idb-1997",
+      "publisher": "Inter-American Development Bank",
+      "date": "November 1997",
+      "title": "Internet for the people",
+      "url": "https://www.iadb.org/en/news/internet-people",
+      "supports": "Contemporary cabina access model, hourly rental, training and email. Dated through The IDB, volume 24, number 11 (November 1997).",
+      "kind": "Contemporary institutional report",
+      "accessed": "2026-09-13"
+    },
+    {
+      "id": "telefonica-2002",
+      "publisher": "Telefónica del Perú / U.S. Securities and Exchange Commission",
+      "date": "5 May 2003",
+      "title": "Telefónica del Perú: 2002 Annual Report, filed with Form 6-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1014620/000119312503003396/d6k.htm",
+      "supports": "Speedy accesses in 2001 and 2002; flat-rate service description.",
+      "kind": "Company annual report",
+      "accessed": "2026-09-13"
+    },
+    {
+      "id": "osiptel-cabinas-2007",
+      "publisher": "OSIPTEL",
+      "date": "27 March 2007",
+      "title": "Mayor acceso a Internet pública",
+      "url": "https://www.gob.pe/institucion/osiptel/noticias/178644-mayor-acceso-a-internet-publica",
+      "supports": "INEI findings for Lima households with a member using cabinas, Q4 2006 and Q4 2005. The regulator relays an El Peruano report of INEI results.",
+      "kind": "Institutional statistical news",
+      "accessed": "2026-09-13"
+    },
+    {
+      "id": "law-29904",
+      "publisher": "Diario Oficial El Peruano",
+      "date": "20 July 2012",
+      "title": "Ley 29904: Ley de promoción de la banda ancha y construcción de la Red Dorsal Nacional de Fibra Óptica",
+      "url": "https://diariooficial.elperuano.pe/normas/obtenerdocumento?idnorma=82",
+      "supports": "Original publication date and purpose of Law 29904. Link hosts the updated text and states its original publication date.",
+      "kind": "Official legislation",
+      "accessed": "2026-09-13"
+    },
+    {
+      "id": "mtc-4g",
+      "publisher": "Ministerio de Transportes y Comunicaciones",
+      "date": "Undated",
+      "title": "Enabling 4G-LTE technology",
+      "url": "https://portal.mtc.gob.pe/logros_habilitacion.html",
+      "supports": "July 2013 award of two spectrum blocks in the AWS 1.7/2.1 GHz band.",
+      "kind": "Government project record",
+      "accessed": "2026-09-13"
+    },
+    {
+      "id": "telefonica-2013",
+      "publisher": "Telefónica",
+      "date": "2014 (reporting year 2013)",
+      "title": "Telefónica Informe Integrado 2013",
+      "url": "https://www.telefonica.com/es/wp-content/uploads/sites/4/2021/07/informe_anual_2013_es.pdf#page=48",
+      "supports": "Printed page 48, Peru row: 4G pre-sales in 2013 for operation from 2 January 2014.",
+      "kind": "Company annual report",
+      "accessed": "2026-09-13"
+    },
+    {
+      "id": "mtc-backbone",
+      "publisher": "Ministerio de Transportes y Comunicaciones",
+      "date": "Undated (records September 2016)",
+      "title": "Logros: Red Dorsal Nacional de Fibra Óptica",
+      "url": "https://portal.mtc.gob.pe/logros_red_dorsal.html",
+      "supports": "Approximately 13,500 km of fibre; completion of deployment in September 2016; transition to carrier service.",
+      "kind": "Government project record",
+      "accessed": "2026-09-13"
+    },
+    {
+      "id": "idb-ipt-2019",
+      "publisher": "Inter-American Development Bank",
+      "date": "2019 (year identified by the events in the article)",
+      "title": "Internet para Todos: disminuyendo la brecha digital en América Latina",
+      "url": "https://www.iadb.org/es/internet-para-todos-disminuyendo-la-brecha-digital-en-america-latina",
+      "supports": "First connection platform in Moya on 28 June 2019; participating institutions and rural mobile infrastructure model.",
+      "kind": "Project partner report",
+      "accessed": "2026-09-13"
+    },
+    {
+      "id": "osiptel-2020",
+      "publisher": "OSIPTEL",
+      "date": "22 March 2020",
+      "title": "Tráfico de datos se incrementó sustancialmente en redes móviles y fijas en la última semana",
+      "url": "https://www.osiptel.gob.pe/portal-del-usuario/noticias/osiptel-trafico-de-datos-se-incremento-sustancialmente-en-redes-moviles-y-fijas-en-la-ultima-semana/",
+      "supports": "Mobile and fixed traffic changes during 16–20 March 2020 compared with the previous week.",
+      "kind": "Regulator network statistics",
+      "accessed": "2026-09-13"
+    },
+    {
+      "id": "osiptel-fibre-2024",
+      "publisher": "OSIPTEL",
+      "date": "24 February 2025",
+      "title": "Perú registró más de 4 millones de conexiones de internet fijo al cierre de 2024",
+      "url": "https://www.osiptel.gob.pe/portal-del-usuario/noticias/peru-registro-mas-de-4-millones-de-conexiones-de-internet-fijo-al-cierre-de-2024/",
+      "supports": "4,069,739 fixed connections and 73.84% fibre share at December 2024; provider-reported PUNKU data.",
+      "kind": "Regulator market statistics",
+      "accessed": "2026-09-13"
+    },
+    {
+      "id": "inei-2025",
+      "publisher": "Instituto Nacional de Estadística e Informática (INEI)",
+      "date": "March 2026",
+      "title": "Estadísticas de las tecnologías de información y comunicación en los hogares: IV Trimestre 2025",
+      "url": "https://www.inei.gob.pe/media/MenuRecursivo/boletines/boletin-tic-oct_dic2025.pdf#page=6",
+      "supports": "Pages 6–7: Q4 2025 household internet service, national 60.1%, Lima 78.2%, other urban 63.1%, rural 23.4%; preliminary ENAHO estimates. Lima includes Callao; other urban excludes metropolitan Lima.",
+      "kind": "Official household survey",
+      "accessed": "2026-09-13"
+    }
+  ]
+}

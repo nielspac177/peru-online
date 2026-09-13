@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="A sourced timeline of Peru’s internet history during 1997–2025. Search milestones and filter the archive by era.">
+    <meta name="theme-color" content="#f4f1e9">
+    <title>The timeline | Perú Online</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/app.js"></script>
+  </head>
+  <body data-page="timeline">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header wrap">
+      <a class="brand" href="index.html" aria-label="Perú Online home"
+        ><span class="brand-mark" aria-hidden="true">p<span>↗</span></span
+        >perú<span class="brand-light">online</span
+        ><span class="brand-dot" aria-hidden="true"></span
+      ></a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Overview</a
+        ><a href="timeline.html" aria-current="page">Timeline</a
+        ><a href="connections.html">Connections</a
+        ><a href="about.html">Sources</a>
+      </nav>
+      <span class="header-note mono">AN INTERNET HISTORY<br>1997 — 2025</span>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="page-intro wrap">
+        <p class="eyebrow">THE ARCHIVE / 1997–2025</p>
+        <h1>Small signals.<br><em>Lasting change.</em></h1>
+        <div class="intro-bottom">
+          <p>
+            Follow the moments that reshaped Peru’s relationship with the
+            internet. A story of shared screens, new infrastructure, and the
+            people still waiting to connect.
+          </p>
+          <span class="mono">SCROLL THROUGH A GENERATION ↓</span>
+        </div>
+      </section>
+      <section class="archive wrap" aria-labelledby="archive-heading">
+        <h2 id="archive-heading" class="sr-only">Internet history timeline</h2>
+        <div class="archive-controls">
+          <fieldset class="era-filters">
+            <legend class="sr-only">Filter by era</legend>
+            <button type="button" data-era="all" aria-pressed="true">
+              All years</button
+            ><button type="button" data-era="early" aria-pressed="false">
+              1997–2009</button
+            ><button type="button" data-era="mobile" aria-pressed="false">
+              2010–2019</button
+            ><button type="button" data-era="today" aria-pressed="false">
+              2020–2025
+            </button>
+          </fieldset>
+          <div class="search-field">
+            <label for="search" class="sr-only">Search milestones</label
+            ><span aria-hidden="true">⌕</span
+            ><input
+              id="search"
+              type="search"
+              placeholder="Search the archive"
+              maxlength="100">
+          </div>
+        </div>
+        <p id="result-count" class="mono result-count" role="status"></p>
+        <div id="timeline-list">
+          <p class="load-status" role="status">Loading the archive…</p>
+          <noscript
+            ><p>
+              This collection uses JavaScript to load its records. Enable
+              JavaScript or read the
+              <a href="data/content.json">source JSON</a>. The page introduction
+              and navigation remain available.
+            </p></noscript
+          >
+        </div>
+      </section>
+      <aside class="context-note wrap">
+        <span class="mono">BEFORE THE FIRST CHAPTER</span>
+        <p>
+          1997 is this project’s starting point because it is the author’s birth
+          year. It is <strong>not</strong> the beginning of the internet in
+          Peru: the Red Científica Peruana and public-access initiatives predate
+          this timeline.
+          <a href="about.html#idb-1997">Read the contemporary account ↗</a>
+        </p>
+      </aside>
+    </main>
+    <footer class="site-footer wrap">
+      <a class="brand" href="index.html"
+        >perú<span class="brand-light">online</span
+        ><span class="brand-dot" aria-hidden="true"></span
+      ></a>
+      <p>A country. A generation. A connection.</p>
+      <a href="about.html"
+        >Research &amp; credits <span aria-hidden="true">↗</span></a
+      >
+      <span class="mono">CM1040 · 2026</span>
+    </footer>
+    <template id="milestone-template"
+      ><article class="milestone" id="event-{{id}}">
+        <div class="milestone-date">
+          <span>{{year}}</span>
+          <p class="mono">{{eraLabel}}</p>
+        </div>
+        <div class="milestone-copy">
+          <p class="eyebrow">{{category}}</p>
+          <h3>{{title}}</h3>
+          <p>{{body}}</p>
+          <p class="milestone-note">{{note}}</p>
+          <a class="source-link" href="{{sourceUrl}}"
+            >{{sourceLabel}} <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <span class="milestone-age mono">AGE {{age}}</span>
+      </article></template
+    >
+  </body>
+</html>

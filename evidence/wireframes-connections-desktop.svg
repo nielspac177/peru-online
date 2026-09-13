@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1010" viewBox="0 0 1200 1010" role="img" aria-labelledby="title desc">
+<title id="title">Everyday connections — desktop proposed wireframe</title>
+<desc id="desc">Original initial layout proposal. Boxes and short labels indicate hierarchy; this is not a screenshot of the completed website.</desc>
+<rect width="1200" height="1010" fill="#f4f1e9"/>
+<text x="60" y="35" font-size="21" fill="#21241f" font-family="Georgia,serif">PERU ONLINE</text>
+<text x="550" y="35" font-size="15" fill="#21241f" font-family="Helvetica,sans-serif">Overview       Timeline       Connections       Sources &amp; project</text>
+<line x1="60" y1="58" x2="1140" y2="58" stroke="#c5c1b7"/>
+<text x="60" y="110" font-size="11" fill="#ad281b" font-family="Helvetica,sans-serif">INITIAL PROPOSAL  /  1997–2025</text>
+<text x="60" y="166" font-size="66" fill="#21241f" font-family="Georgia,serif">How Peru</text>
+<text x="60" y="213" font-size="66" fill="#21241f" font-family="Georgia,serif">got online.</text>
+<rect x="60" y="255" width="535" height="3" fill="#c5c1b7"/>
+<rect x="60" y="270" width="535" height="3" fill="#c5c1b7"/>
+<rect x="60" y="285" width="385.2" height="3" fill="#c5c1b7"/>
+<rect x="740" y="145" width="400" height="160" fill="#e7e3d9" stroke="#c5c1b7"/>
+<text x="758" y="175" font-size="13" fill="#21241f" font-family="Helvetica,sans-serif">Illustrative art: cabina / phone / terrain</text>
+<line x1="60" y1="385" x2="1140" y2="385" stroke="#c5c1b7"/>
+<rect x="60" y="430" width="310" height="178" fill="#e7e3d9" stroke="#c5c1b7"/>
+<text x="78" y="460" font-size="13" fill="#21241f" font-family="Helvetica,sans-serif">Original illustrative artwork</text>
+<text x="60" y="655" font-size="23" fill="#21241f" font-family="Georgia,serif">01  The public cabina</text>
+<rect x="60" y="685" width="310" height="3" fill="#c5c1b7"/>
+<rect x="60" y="700" width="310" height="3" fill="#c5c1b7"/>
+<rect x="60" y="715" width="310" height="3" fill="#c5c1b7"/>
+<rect x="60" y="730" width="310" height="3" fill="#c5c1b7"/>
+<rect x="60" y="745" width="223.2" height="3" fill="#c5c1b7"/>
+<text x="60" y="805" font-size="13" fill="#ad281b" font-family="Helvetica,sans-serif">Evidence / source ↗</text>
+<rect x="425" y="430" width="310" height="178" fill="#e7e3d9" stroke="#c5c1b7"/>
+<text x="443" y="460" font-size="13" fill="#21241f" font-family="Helvetica,sans-serif">Original illustrative artwork</text>
+<text x="425" y="655" font-size="23" fill="#21241f" font-family="Georgia,serif">02  Internet in your pocket</text>
+<rect x="425" y="685" width="310" height="3" fill="#c5c1b7"/>
+<rect x="425" y="700" width="310" height="3" fill="#c5c1b7"/>
+<rect x="425" y="715" width="310" height="3" fill="#c5c1b7"/>
+<rect x="425" y="730" width="310" height="3" fill="#c5c1b7"/>
+<rect x="425" y="745" width="223.2" height="3" fill="#c5c1b7"/>
+<text x="425" y="805" font-size="13" fill="#ad281b" font-family="Helvetica,sans-serif">Evidence / source ↗</text>
+<rect x="790" y="430" width="310" height="178" fill="#e7e3d9" stroke="#c5c1b7"/>
+<text x="808" y="460" font-size="13" fill="#21241f" font-family="Helvetica,sans-serif">Original illustrative artwork</text>
+<text x="790" y="655" font-size="23" fill="#21241f" font-family="Georgia,serif">03  The distance to access</text>
+<rect x="790" y="685" width="310" height="3" fill="#c5c1b7"/>
+<rect x="790" y="700" width="310" height="3" fill="#c5c1b7"/>
+<rect x="790" y="715" width="310" height="3" fill="#c5c1b7"/>
+<rect x="790" y="730" width="310" height="3" fill="#c5c1b7"/>
+<rect x="790" y="745" width="223.2" height="3" fill="#c5c1b7"/>
+<text x="790" y="805" font-size="13" fill="#ad281b" font-family="Helvetica,sans-serif">Evidence / source ↗</text>
+<line x1="60" y1="945" x2="1140" y2="945" stroke="#c5c1b7"/>
+<text x="60" y="974" font-size="11" fill="#21241f" font-family="Helvetica,sans-serif">PERU ONLINE  /  proposed layout</text>
+<text x="60" y="994" font-size="9" fill="#21241f" font-family="Helvetica,sans-serif">Original wireframe · desktop / mobile study</text>
+</svg>

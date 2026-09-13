@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Primary sources, data definitions and design credits for the Perú Online internet history project.">
+    <meta name="theme-color" content="#f4f1e9">
+    <title>Sources &amp; project | Perú Online</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/app.js"></script>
+  </head>
+  <body data-page="about">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header wrap">
+      <a class="brand" href="index.html" aria-label="Perú Online home"
+        ><span class="brand-mark" aria-hidden="true">p<span>↗</span></span
+        >perú<span class="brand-light">online</span
+        ><span class="brand-dot" aria-hidden="true"></span
+      ></a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Overview</a><a href="timeline.html">Timeline</a
+        ><a href="connections.html">Connections</a
+        ><a href="about.html" aria-current="page">Sources</a>
+      </nav>
+      <span class="header-note mono">AN INTERNET HISTORY<br>1997 — 2025</span>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="page-intro wrap">
+        <p class="eyebrow">RESEARCH / CONTEXT / CREDITS</p>
+        <h1>Every story<br>needs <em>a source.</em></h1>
+        <div class="intro-bottom">
+          <p>
+            A transparent guide to the evidence behind Perú Online. Follow the
+            original publications, understand the limits of the data, and see
+            how this history was put together.
+          </p>
+          <span class="mono">RESEARCH CHECKED / SEPTEMBER 2026</span>
+        </div>
+      </section>
+      <div class="about-layout wrap">
+        <aside class="about-aside">
+          <p class="eyebrow">IN THIS PROJECT</p>
+          <a href="#scope">The perspective ↓</a
+          ><a href="#bibliography">The sources ↓</a
+          ><a href="#credits">Design &amp; credits ↓</a>
+        </aside>
+        <div class="about-main">
+          <section id="scope">
+            <h2>A lifetime as<br><em>the starting point.</em></h2>
+            <p>
+              Perú Online explores the internet in Peru from 1997, the author’s
+              birth year, through 2025. The timeline combines contemporary
+              accounts, institutional publications and official statistics. The
+              project was prepared for CM1040 Web Development in 2026.
+            </p>
+            <p>
+              This is a selective history of public access, fixed and mobile
+              networks, and the geographic divide. It is not an exhaustive
+              history of every provider or policy. The lifetime framing
+              establishes the period; it does not claim personal memories of
+              each event.
+            </p>
+            <div class="method-note">
+              <h3>Reading the numbers</h3>
+              <p>
+                The access chart uses one INEI measure and one quarter for all
+                four categories. It describes households with internet service,
+                not individual internet users, subscriptions, coverage or speed.
+                Estimates for Q4 2025 are preliminary. The 54.8-point gap is
+                calculated from the published rounded percentages.
+              </p>
+            </div>
+          </section>
+          <section id="bibliography">
+            <p class="eyebrow">THE READING ROOM</p>
+            <h2>Primary sources.</h2>
+            <p>
+              Records link to the publication supporting each milestone. Older
+              dates describe events within the project period; sources published
+              in 2026 can report on 2025.
+            </p>
+            <div id="source-list">
+              <p class="load-status" role="status">Loading the archive…</p>
+              <noscript
+                ><p>
+                  This collection uses JavaScript to load its records. Enable
+                  JavaScript or read the
+                  <a href="data/content.json">source JSON</a>. The page
+                  introduction and navigation remain available.
+                </p></noscript
+              >
+            </div>
+          </section>
+          <section id="credits">
+            <p class="eyebrow">DESIGN &amp; CREDITS</p>
+            <h2>Built around<br><em>the connection.</em></h2>
+            <p>
+              The visual direction takes inspiration from the spacious
+              compositions and sculptural 3D motion in Alex Bender / FANCY’s
+              <a
+                href="https://dribbble.com/shots/26305597-Resadex-Landing-page-3D-animation"
+                >Resadex concept</a
+              >
+              and
+              <a
+                href="https://dribbble.com/shots/26270031-Hero-section-Landing-page-3D-animation"
+                >hero animation concept</a
+              >. Their artwork is not reproduced.
+            </p>
+            <p>
+              The globe and device illustrations are original procedural
+              graphics created for this project with AI assistance. The globe is
+              decorative, with approximate land shapes and imaginary connection
+              arcs; it is not a network map. Fonts: DM Sans and Instrument
+              Serif, distributed under the SIL Open Font License. Font files are
+              served locally.
+            </p>
+            <p>
+              The website uses semantic HTML, responsive CSS and browser
+              JavaScript. Historical records are loaded from JSON, validated,
+              then rendered through an escaped-token template engine. Research,
+              code, design and documentation were developed with AI assistance;
+              source links allow readers to inspect the evidence.
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer wrap">
+      <a class="brand" href="index.html"
+        >perú<span class="brand-light">online</span
+        ><span class="brand-dot" aria-hidden="true"></span
+      ></a>
+      <p>A country. A generation. A connection.</p>
+      <a href="about.html"
+        >Research &amp; credits <span aria-hidden="true">↗</span></a
+      >
+      <span class="mono">CM1040 · 2026</span>
+    </footer>
+    <template id="source-template"
+      ><article class="source-item" id="{{id}}">
+        <p class="mono">{{publisher}} · {{date}}</p>
+        <h3>
+          <a href="{{url}}">{{title}} <span aria-hidden="true">↗</span></a>
+        </h3>
+        <p>{{supports}}</p>
+        <p class="small">Accessed {{accessed}} · {{kind}}</p>
+      </article></template
+    >
+  </body>
+</html>

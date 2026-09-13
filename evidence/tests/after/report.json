@@ -1,0 +1,289 @@
+{
+  "generatedAt": "2026-09-13T21:05:15.292Z",
+  "phase": "after",
+  "scope": "Authored HTML and actual templates rendered from validated project JSON",
+  "tools": {
+    "html-validate": "10.1.2",
+    "axe-core": "4.10.3",
+    "jsdom": "26.1.0"
+  },
+  "htmlConfiguration": {
+    "extends": [
+      "html-validate:recommended"
+    ],
+    "rules": {
+      "no-inline-style": [
+        "error",
+        {
+          "allowedProperties": [
+            "width"
+          ]
+        }
+      ]
+    }
+  },
+  "renderedHtmlConfiguration": {
+    "extends": [
+      "html-validate:recommended"
+    ],
+    "rules": {
+      "no-inline-style": [
+        "error",
+        {
+          "allowedProperties": [
+            "width"
+          ]
+        }
+      ],
+      "no-trailing-whitespace": "off"
+    }
+  },
+  "templateHandling": "Authored id=\"{{id}}\" and id=\"event-{{id}}\" attributes are marked DynamicValue through the validator API. Rendered documents have inert template definitions removed and all generated IDs checked strictly.",
+  "accessibilityConfiguration": {
+    "wcagTags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "disabledRules": [
+      "color-contrast"
+    ]
+  },
+  "limitations": [
+    "jsdom does not implement a browser layout/paint engine. Colour contrast is explicitly disabled, not recorded as passing.",
+    "Keyboard navigation, focus visibility, target size, zoom/reflow, motion, and screen-reader usability require separate browser/manual checks.",
+    "An automated report with no violations does not establish WCAG conformance.",
+    "Rendered checks use the production template engine and data validator directly. They do not execute browser module loading, search, filtering, or animation.",
+    "HTML source line numbers refer to the source; rendered HTML line numbers refer to the serialized DOM."
+  ],
+  "inputHashes": {
+    "data/content.json": "001d034b8b5d09f08475403d2d77944c33a5cdb22391a663a60e8ea0a87243f4",
+    "js/template-engine.js": "73c2ef0a51f3530e18e60107efc58c11df37d6fea891d28fc930a6a29fab13be",
+    "js/validate-data.js": "2b19d0c1dc56cb4eb3750942af98d769e1854a18f82ebedfb74a1d551ee822aa",
+    "index.html": "a4082ce24b20244a83c4992531914fe4e31b2eea47aab9fa9df8e3f21d17db47",
+    "timeline.html": "a52a36c7d3b404cdc9ac511ea8988d475989813b885d6a789adbf16c86a46541",
+    "connections.html": "f56f7c9dd39cc096e420e49a303295db0e8d55419f9e908a8469f522c95fb73a",
+    "about.html": "90c48dd2014a543b6e5c31ec939c8857d94b53d9201e37f24064d02e6da3a021",
+    "404.html": "1f395231e327f2a7d33c3e6c6b6ac32e63070d93fab25199316c829134136eb6"
+  },
+  "pages": [
+    {
+      "page": "index.html",
+      "source": {
+        "html": {
+          "valid": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "messages": []
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 22,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 39,
+          "violations": [],
+          "incomplete": []
+        }
+      },
+      "rendered": {
+        "html": {
+          "valid": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "messages": []
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 22,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 39,
+          "violations": [],
+          "incomplete": []
+        },
+        "recordCounts": {
+          "milestones": 0,
+          "statistics": 3,
+          "sources": 0
+        }
+      }
+    },
+    {
+      "page": "timeline.html",
+      "source": {
+        "html": {
+          "valid": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "messages": []
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 22,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 39,
+          "violations": [],
+          "incomplete": []
+        }
+      },
+      "rendered": {
+        "html": {
+          "valid": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "messages": []
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 22,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 39,
+          "violations": [],
+          "incomplete": []
+        },
+        "recordCounts": {
+          "milestones": 10,
+          "statistics": 0,
+          "sources": 0
+        }
+      }
+    },
+    {
+      "page": "connections.html",
+      "source": {
+        "html": {
+          "valid": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "messages": []
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 19,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 42,
+          "violations": [],
+          "incomplete": []
+        }
+      },
+      "rendered": {
+        "html": {
+          "valid": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "messages": []
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 16,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 45,
+          "violations": [],
+          "incomplete": []
+        },
+        "recordCounts": {
+          "milestones": 0,
+          "statistics": 4,
+          "sources": 0
+        }
+      }
+    },
+    {
+      "page": "about.html",
+      "source": {
+        "html": {
+          "valid": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "messages": []
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 17,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 44,
+          "violations": [],
+          "incomplete": []
+        }
+      },
+      "rendered": {
+        "html": {
+          "valid": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "messages": []
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 14,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 47,
+          "violations": [],
+          "incomplete": []
+        },
+        "recordCounts": {
+          "milestones": 0,
+          "statistics": 0,
+          "sources": 11
+        }
+      }
+    },
+    {
+      "page": "404.html",
+      "source": {
+        "html": {
+          "valid": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "messages": []
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 14,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 47,
+          "violations": [],
+          "incomplete": []
+        }
+      },
+      "rendered": {
+        "html": {
+          "valid": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "messages": []
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 14,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 47,
+          "violations": [],
+          "incomplete": []
+        },
+        "recordCounts": {
+          "milestones": 0,
+          "statistics": 0,
+          "sources": 0
+        }
+      }
+    }
+  ],
+  "totals": {
+    "htmlErrors": 0,
+    "htmlWarnings": 0,
+    "axeViolations": 0,
+    "axeIncomplete": 0
+  }
+}

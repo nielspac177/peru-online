@@ -1,0 +1,163 @@
+{
+  "generatedAt": "2026-09-13T20:59:04.174Z",
+  "tool": "axe-core 4.10.3 in a real browser",
+  "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
+  "configuration": {
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "colorContrastEnabled": true,
+    "iframeViewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "timeoutMs": 5000
+  },
+  "limitations": [
+    "Automated results are not a WCAG conformance claim. Manual keyboard, screen-reader, zoom/reflow, focus visibility and motion testing remain necessary."
+  ],
+  "pages": [
+    {
+      "page": "index.html",
+      "title": "A country. A generation. Connected. | Perú Online",
+      "loadedRecordCount": 3,
+      "violationCount": 0,
+      "failingNodeCount": 0,
+      "passRuleCount": 24,
+      "incompleteRuleCount": 1,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+          "nodes": [
+            {
+              "target": [
+                ".scene-index"
+              ],
+              "html": "<span class=\"scene-index mono\" aria-hidden=\"true\">FIG. 01 / A WORLD WITHIN REACH</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".lima-label > div"
+              ],
+              "html": "<div>PERÚ<br><span class=\"mono\">12° S · 77° W</span></div>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".lima-label > div > .mono"
+              ],
+              "html": "<span class=\"mono\">12° S · 77° W</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "figcaption > .mono"
+              ],
+              "html": "<span class=\"mono\">ILLUSTRATIVE NETWORK GLOBE</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "#motion-toggle"
+              ],
+              "html": "<button id=\"motion-toggle\" type=\"button\" aria-pressed=\"false\">Pause motion Ⅱ</button>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".art-cabina > .art-label.mono"
+              ],
+              "html": "<span class=\"art-label mono\">CONEXIÓN ESTABLECIDA_</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".art-mobile > .art-label.mono"
+              ],
+              "html": "<span class=\"art-label mono\">EL MUNDO, EN TU BOLSILLO</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".art-terrain > .art-label.mono"
+              ],
+              "html": "<span class=\"art-label mono\">LA CONEXIÓN CONTINÚA</span>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".closing > .button[href$=\"timeline.html\"] > span[aria-hidden=\"true\"]"
+              ],
+              "html": "<span aria-hidden=\"true\">→</span>",
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "timeline.html",
+      "title": "The timeline | Perú Online",
+      "loadedRecordCount": 10,
+      "violationCount": 0,
+      "failingNodeCount": 0,
+      "passRuleCount": 24,
+      "incompleteRuleCount": 1,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+          "nodes": [
+            {
+              "target": [
+                ".search-field > span[aria-hidden=\"true\"]"
+              ],
+              "html": "<span aria-hidden=\"true\">⌕</span>",
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "connections.html",
+      "title": "Everyday connections | Perú Online",
+      "loadedRecordCount": 4,
+      "violationCount": 0,
+      "failingNodeCount": 0,
+      "passRuleCount": 18,
+      "incompleteRuleCount": 0,
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "page": "about.html",
+      "title": "Sources & project | Perú Online",
+      "loadedRecordCount": 11,
+      "violationCount": 0,
+      "failingNodeCount": 0,
+      "passRuleCount": 16,
+      "incompleteRuleCount": 0,
+      "violations": [],
+      "incomplete": []
+    }
+  ],
+  "totals": {
+    "testedPages": 4,
+    "errors": 0,
+    "violations": 0,
+    "incomplete": 2
+  }
+}

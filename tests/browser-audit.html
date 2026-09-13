@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Perú Online: real-browser accessibility audit</title>
+  <style>
+    body { margin: 24px; font: 16px/1.5 system-ui, sans-serif; color: #181818; background: #fff; }
+    button { padding: 12px 18px; font: inherit; }
+    pre { white-space: pre-wrap; overflow-wrap: anywhere; border: 1px solid #767676; padding: 16px; }
+    iframe { display: block; width: 1280px; max-width: none; height: 900px; border: 1px solid #767676; margin-top: 24px; }
+  </style>
+</head>
+<body>
+  <h1>Real-browser accessibility audit</h1>
+  <p>This development-only harness loads the four website pages in a same-origin iframe, waits for their JSON content, then runs local axe-core including colour contrast. No results are sent to a third party.</p>
+  <p>Automated checks do not prove WCAG compliance. Keyboard, screen-reader, zoom, and motion checks remain separate.</p>
+  <button id="run-audit" type="button">Run again</button>
+  <p id="audit-status" role="status">Preparing audit…</p>
+  <pre id="browser-results">Results will appear here.</pre>
+  <iframe id="audit-frame" title="Website page under accessibility test" src="about:blank"></iframe>
+  <script>
+    const pages = [
+      { file: 'index.html', ready: '#home-stats .stat' },
+      { file: 'timeline.html', ready: '#timeline-list .milestone' },
+      { file: 'connections.html', ready: '#access-bars .bar-row' },
+      { file: 'about.html', ready: '#source-list .source-item' },
+    ];
+    const tags = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
+    const frame = document.getElementById('audit-frame');
+    const results = document.getElementById('browser-results');
+    const status = document.getElementById('audit-status');
+    const button = document.getElementById('run-audit');
+    const timeoutMs = 5000;
+
+    function timeout(promise, label) {
+      let timer;
+      return Promise.race([
+        promise,
+        new Promise((_, reject) => { timer = setTimeout(() => reject(new Error(`${label}: exceeded ${timeoutMs} ms`)), timeoutMs); }),
+      ]).finally(() => clearTimeout(timer));
+    }
+
+    async function loadPage(page) {
+      await timeout(new Promise((resolve, reject) => {
+        frame.onload = resolve;
+        frame.onerror = () => reject(new Error(`Could not load ${page.file}`));
+        frame.src = new URL(`../${page.file}`, location.href).href;
+      }), `Loading ${page.file}`);
+      const documentUnderTest = frame.contentDocument;
+      const started = performance.now();
+      while (!documentUnderTest.querySelector(page.ready)) {
+        const error = documentUnderTest.querySelector('.error-state');
+        if (error) throw new Error(`Application error: ${error.textContent}`);
+        if (performance.now() - started > timeoutMs) throw new Error(`Rendered JSON records missing after ${timeoutMs} ms: ${page.ready}`);
+        await new Promise(resolve => setTimeout(resolve, 50));
+      }
+      await timeout(documentUnderTest.fonts.ready, `Fonts for ${page.file}`);
+      await timeout(new Promise((resolve, reject) => {
+        const script = documentUnderTest.createElement('script');
+        script.src = new URL('./axe.min.js', location.href).href;
+        script.onload = resolve;
+        script.onerror = () => reject(new Error('Local axe.min.js failed to load'));
+        documentUnderTest.head.append(script);
+      }), 'Loading axe-core');
+      return documentUnderTest;
+    }
+
+    function details(items) {
+      return items.map(item => ({
+        id: item.id, impact: item.impact, help: item.help, helpUrl: item.helpUrl,
+        nodes: item.nodes.map(node => ({ target: node.target, html: node.html, failureSummary: node.failureSummary })),
+      }));
+    }
+
+    async function run() {
+      button.disabled = true;
+      const report = {
+        generatedAt: new Date().toISOString(),
+        tool: 'axe-core 4.10.3 in a real browser',
+        browser: navigator.userAgent,
+        configuration: { tags, colorContrastEnabled: true, iframeViewport: { width: 1280, height: 900 }, timeoutMs },
+        limitations: ['Automated results are not a WCAG conformance claim. Manual keyboard, screen-reader, zoom/reflow, focus visibility and motion testing remain necessary.'],
+        pages: [],
+      };
+      for (const page of pages) {
+        status.textContent = `Testing ${page.file}…`;
+        try {
+          const documentUnderTest = await loadPage(page);
+          const result = await timeout(frame.contentWindow.axe.run(documentUnderTest, {
+            runOnly: { type: 'tag', values: tags },
+          }), `Axe audit for ${page.file}`);
+          report.pages.push({
+            page: page.file,
+            title: documentUnderTest.title,
+            loadedRecordCount: documentUnderTest.querySelectorAll(page.ready).length,
+            violationCount: result.violations.length,
+            failingNodeCount: result.violations.reduce((sum, item) => sum + item.nodes.length, 0),
+            passRuleCount: result.passes.length,
+            incompleteRuleCount: result.incomplete.length,
+            violations: details(result.violations),
+            incomplete: details(result.incomplete),
+          });
+        } catch (error) {
+          report.pages.push({ page: page.file, error: error.message });
+        }
+        results.textContent = JSON.stringify(report, null, 2);
+      }
+      report.totals = {
+        testedPages: report.pages.filter(page => !page.error).length,
+        errors: report.pages.filter(page => page.error).length,
+        violations: report.pages.reduce((sum, page) => sum + (page.violationCount || 0), 0),
+        incomplete: report.pages.reduce((sum, page) => sum + (page.incompleteRuleCount || 0), 0),
+      };
+      results.textContent = JSON.stringify(report, null, 2);
+      status.textContent = `Complete: ${report.totals.testedPages} pages tested; ${report.totals.violations} violations; ${report.totals.errors} execution errors; ${report.totals.incomplete} incomplete rules to review.`;
+      button.disabled = false;
+    }
+    button.addEventListener('click', run);
+    run();
+  </script>
+</body>
+</html>

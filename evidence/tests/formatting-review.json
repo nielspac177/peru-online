@@ -1,0 +1,958 @@
+{
+  "generatedAt": "2026-09-13T20:59:12.125Z",
+  "phase": "after",
+  "scope": "Authored HTML and actual templates rendered from validated project JSON",
+  "tools": {
+    "html-validate": "10.1.2",
+    "axe-core": "4.10.3",
+    "jsdom": "26.1.0"
+  },
+  "htmlConfiguration": {
+    "extends": [
+      "html-validate:recommended"
+    ],
+    "rules": {
+      "no-inline-style": [
+        "error",
+        {
+          "allowedProperties": [
+            "width"
+          ]
+        }
+      ]
+    }
+  },
+  "templateHandling": "Authored id=\"{{id}}\" and id=\"event-{{id}}\" attributes are marked DynamicValue through the validator API. Rendered documents have inert template definitions removed and all generated IDs checked strictly.",
+  "accessibilityConfiguration": {
+    "wcagTags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "disabledRules": [
+      "color-contrast"
+    ]
+  },
+  "limitations": [
+    "jsdom does not implement a browser layout/paint engine. Colour contrast is explicitly disabled, not recorded as passing.",
+    "Keyboard navigation, focus visibility, target size, zoom/reflow, motion, and screen-reader usability require separate browser/manual checks.",
+    "An automated report with no violations does not establish WCAG conformance.",
+    "Rendered checks use the production template engine and data validator directly. They do not execute browser module loading, search, filtering, or animation.",
+    "HTML source line numbers refer to the source; rendered HTML line numbers refer to the serialized DOM."
+  ],
+  "inputHashes": {
+    "data/content.json": "101ae2d83fff070e8a15eec4a79ab1e3187373a277f2b8e389c5bba0162e7989",
+    "js/template-engine.js": "73c2ef0a51f3530e18e60107efc58c11df37d6fea891d28fc930a6a29fab13be",
+    "js/validate-data.js": "2b19d0c1dc56cb4eb3750942af98d769e1854a18f82ebedfb74a1d551ee822aa",
+    "index.html": "544d58c956bea35e33b86aa73ca05c59f1d8134b00c09ab979da34c361567ddb",
+    "timeline.html": "2a02167049dc4a5900a5955154a9220469bf646aeed29d4f1ca7e42a1aedbdfc",
+    "connections.html": "cebef601e75b334d5d21704739fed7c8866f73d58e2f475298e37864ce7b7831",
+    "about.html": "314960f15cf371b2622de7d782b04c21151a54a64c033c038205fa176d452fb2",
+    "404.html": "83766d659d66c465b613c3eac27bebe08adc96f523f149bdb71f4bbd3a6eb28f"
+  },
+  "pages": [
+    {
+      "page": "index.html",
+      "source": {
+        "html": {
+          "valid": false,
+          "errorCount": 20,
+          "warningCount": 0,
+          "messages": [
+            {
+              "ruleId": "doctype-style",
+              "severity": 2,
+              "message": "DOCTYPE should be uppercase",
+              "line": 1,
+              "column": 1,
+              "selector": null,
+              "ruleUrl": "https://html-validate.org/rules/doctype-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <meta> instead of self-closing element <meta/>",
+              "line": 4,
+              "column": 27,
+              "selector": "html > head > meta:nth-child(1)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <meta> instead of self-closing element <meta/>",
+              "line": 5,
+              "column": 73,
+              "selector": "html > head > meta:nth-child(2)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <meta> instead of self-closing element <meta/>",
+              "line": 9,
+              "column": 5,
+              "selector": "html > head > meta:nth-child(3)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <meta> instead of self-closing element <meta/>",
+              "line": 10,
+              "column": 48,
+              "selector": "html > head > meta:nth-child(4)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <link> instead of self-closing element <link/>",
+              "line": 12,
+              "column": 69,
+              "selector": "html > head > link:nth-child(6)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <link> instead of self-closing element <link/>",
+              "line": 13,
+              "column": 49,
+              "selector": "html > head > link:nth-child(7)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <br> instead of self-closing element <br/>",
+              "line": 30,
+              "column": 61,
+              "selector": "html > body > header > span > br",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <br> instead of self-closing element <br/>",
+              "line": 40,
+              "column": 27,
+              "selector": "#hero-title > br:nth-child(1)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <br> instead of self-closing element <br/>",
+              "line": 40,
+              "column": 46,
+              "selector": "#hero-title > br:nth-child(2)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <br> instead of self-closing element <br/>",
+              "line": 66,
+              "column": 26,
+              "selector": "#main > section:nth-child(1) > figure > div > div > br",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <br> instead of self-closing element <br/>",
+              "line": 93,
+              "column": 28,
+              "selector": "#story-heading > br",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <img> instead of self-closing element <img/>",
+              "line": 109,
+              "column": 15,
+              "selector": "#main > section:nth-child(3) > div:nth-child(2) > a:nth-child(1) > div:nth-child(1) > img",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <br> instead of self-closing element <br/>",
+              "line": 115,
+              "column": 34,
+              "selector": "#main > section:nth-child(3) > div:nth-child(2) > a:nth-child(1) > h3 > br",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <img> instead of self-closing element <img/>",
+              "line": 128,
+              "column": 15,
+              "selector": "#main > section:nth-child(3) > div:nth-child(2) > a:nth-child(2) > div:nth-child(1) > img",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <br> instead of self-closing element <br/>",
+              "line": 134,
+              "column": 33,
+              "selector": "#main > section:nth-child(3) > div:nth-child(2) > a:nth-child(2) > h3 > br",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <img> instead of self-closing element <img/>",
+              "line": 147,
+              "column": 15,
+              "selector": "#main > section:nth-child(3) > div:nth-child(2) > a:nth-child(3) > div:nth-child(1) > img",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <br> instead of self-closing element <br/>",
+              "line": 153,
+              "column": 38,
+              "selector": "#main > section:nth-child(3) > div:nth-child(2) > a:nth-child(3) > h3 > br",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <br> instead of self-closing element <br/>",
+              "line": 165,
+              "column": 53,
+              "selector": "#snapshot-heading > br",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <br> instead of self-closing element <br/>",
+              "line": 193,
+              "column": 30,
+              "selector": "#main > section:nth-child(5) > h2 > br",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            }
+          ]
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 22,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 39,
+          "violations": [],
+          "incomplete": []
+        }
+      },
+      "rendered": {
+        "html": {
+          "valid": false,
+          "errorCount": 2,
+          "warningCount": 0,
+          "messages": [
+            {
+              "ruleId": "no-trailing-whitespace",
+              "severity": 2,
+              "message": "Trailing whitespace",
+              "line": 150,
+              "column": 1,
+              "selector": null,
+              "ruleUrl": "https://html-validate.org/rules/no-trailing-whitespace.html"
+            },
+            {
+              "ruleId": "no-trailing-whitespace",
+              "severity": 2,
+              "message": "Trailing whitespace",
+              "line": 151,
+              "column": 1,
+              "selector": null,
+              "ruleUrl": "https://html-validate.org/rules/no-trailing-whitespace.html"
+            }
+          ]
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 22,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 39,
+          "violations": [],
+          "incomplete": []
+        },
+        "recordCounts": {
+          "milestones": 0,
+          "statistics": 3,
+          "sources": 0
+        }
+      }
+    },
+    {
+      "page": "timeline.html",
+      "source": {
+        "html": {
+          "valid": false,
+          "errorCount": 10,
+          "warningCount": 0,
+          "messages": [
+            {
+              "ruleId": "doctype-style",
+              "severity": 2,
+              "message": "DOCTYPE should be uppercase",
+              "line": 1,
+              "column": 1,
+              "selector": null,
+              "ruleUrl": "https://html-validate.org/rules/doctype-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <meta> instead of self-closing element <meta/>",
+              "line": 4,
+              "column": 27,
+              "selector": "html > head > meta:nth-child(1)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <meta> instead of self-closing element <meta/>",
+              "line": 5,
+              "column": 73,
+              "selector": "html > head > meta:nth-child(2)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <meta> instead of self-closing element <meta/>",
+              "line": 9,
+              "column": 5,
+              "selector": "html > head > meta:nth-child(3)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <meta> instead of self-closing element <meta/>",
+              "line": 10,
+              "column": 48,
+              "selector": "html > head > meta:nth-child(4)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <link> instead of self-closing element <link/>",
+              "line": 12,
+              "column": 69,
+              "selector": "html > head > link:nth-child(6)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <link> instead of self-closing element <link/>",
+              "line": 13,
+              "column": 49,
+              "selector": "html > head > link:nth-child(7)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <br> instead of self-closing element <br/>",
+              "line": 30,
+              "column": 61,
+              "selector": "html > body > header > span > br",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <br> instead of self-closing element <br/>",
+              "line": 35,
+              "column": 31,
+              "selector": "#main > section:nth-child(1) > h1 > br",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <input> instead of self-closing element <input/>",
+              "line": 68,
+              "column": 13,
+              "selector": "#search",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            }
+          ]
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 22,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 39,
+          "violations": [],
+          "incomplete": []
+        }
+      },
+      "rendered": {
+        "html": {
+          "valid": false,
+          "errorCount": 2,
+          "warningCount": 0,
+          "messages": [
+            {
+              "ruleId": "no-trailing-whitespace",
+              "severity": 2,
+              "message": "Trailing whitespace",
+              "line": 199,
+              "column": 1,
+              "selector": null,
+              "ruleUrl": "https://html-validate.org/rules/no-trailing-whitespace.html"
+            },
+            {
+              "ruleId": "no-trailing-whitespace",
+              "severity": 2,
+              "message": "Trailing whitespace",
+              "line": 200,
+              "column": 1,
+              "selector": null,
+              "ruleUrl": "https://html-validate.org/rules/no-trailing-whitespace.html"
+            }
+          ]
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 22,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 39,
+          "violations": [],
+          "incomplete": []
+        },
+        "recordCounts": {
+          "milestones": 10,
+          "statistics": 0,
+          "sources": 0
+        }
+      }
+    },
+    {
+      "page": "connections.html",
+      "source": {
+        "html": {
+          "valid": false,
+          "errorCount": 16,
+          "warningCount": 0,
+          "messages": [
+            {
+              "ruleId": "doctype-style",
+              "severity": 2,
+              "message": "DOCTYPE should be uppercase",
+              "line": 1,
+              "column": 1,
+              "selector": null,
+              "ruleUrl": "https://html-validate.org/rules/doctype-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <meta> instead of self-closing element <meta/>",
+              "line": 4,
+              "column": 27,
+              "selector": "html > head > meta:nth-child(1)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <meta> instead of self-closing element <meta/>",
+              "line": 5,
+              "column": 73,
+              "selector": "html > head > meta:nth-child(2)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <meta> instead of self-closing element <meta/>",
+              "line": 9,
+              "column": 5,
+              "selector": "html > head > meta:nth-child(3)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <meta> instead of self-closing element <meta/>",
+              "line": 10,
+              "column": 48,
+              "selector": "html > head > meta:nth-child(4)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <link> instead of self-closing element <link/>",
+              "line": 12,
+              "column": 69,
+              "selector": "html > head > link:nth-child(6)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <link> instead of self-closing element <link/>",
+              "line": 13,
+              "column": 49,
+              "selector": "html > head > link:nth-child(7)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <br> instead of self-closing element <br/>",
+              "line": 29,
+              "column": 61,
+              "selector": "html > body > header > span > br",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <br> instead of self-closing element <br/>",
+              "line": 34,
+              "column": 34,
+              "selector": "#main > section:nth-child(1) > h1 > br",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <img> instead of self-closing element <img/>",
+              "line": 51,
+              "column": 11,
+              "selector": "#cabinas > div:nth-child(1) > img",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <br> instead of self-closing element <br/>",
+              "line": 55,
+              "column": 30,
+              "selector": "#cabinas > div:nth-child(2) > h2 > br",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <img> instead of self-closing element <img/>",
+              "line": 84,
+              "column": 11,
+              "selector": "#mobile > div:nth-child(1) > img",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <br> instead of self-closing element <br/>",
+              "line": 88,
+              "column": 31,
+              "selector": "#mobile > div:nth-child(2) > h2 > br",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <br> instead of self-closing element <br/>",
+              "line": 111,
+              "column": 33,
+              "selector": "#divide > div > div:nth-child(1) > h2 > br",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <br> instead of self-closing element <br/>",
+              "line": 144,
+              "column": 43,
+              "selector": "#divide > div > div:nth-child(2) > div:nth-child(2) > h3 > br",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <br> instead of self-closing element <br/>",
+              "line": 165,
+              "column": 34,
+              "selector": "#main > section:nth-child(5) > h2 > br",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            }
+          ]
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 19,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 42,
+          "violations": [],
+          "incomplete": []
+        }
+      },
+      "rendered": {
+        "html": {
+          "valid": false,
+          "errorCount": 2,
+          "warningCount": 0,
+          "messages": [
+            {
+              "ruleId": "no-trailing-whitespace",
+              "severity": 2,
+              "message": "Trailing whitespace",
+              "line": 167,
+              "column": 1,
+              "selector": null,
+              "ruleUrl": "https://html-validate.org/rules/no-trailing-whitespace.html"
+            },
+            {
+              "ruleId": "no-trailing-whitespace",
+              "severity": 2,
+              "message": "Trailing whitespace",
+              "line": 168,
+              "column": 1,
+              "selector": null,
+              "ruleUrl": "https://html-validate.org/rules/no-trailing-whitespace.html"
+            }
+          ]
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 16,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 45,
+          "violations": [],
+          "incomplete": []
+        },
+        "recordCounts": {
+          "milestones": 0,
+          "statistics": 4,
+          "sources": 0
+        }
+      }
+    },
+    {
+      "page": "about.html",
+      "source": {
+        "html": {
+          "valid": false,
+          "errorCount": 11,
+          "warningCount": 0,
+          "messages": [
+            {
+              "ruleId": "doctype-style",
+              "severity": 2,
+              "message": "DOCTYPE should be uppercase",
+              "line": 1,
+              "column": 1,
+              "selector": null,
+              "ruleUrl": "https://html-validate.org/rules/doctype-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <meta> instead of self-closing element <meta/>",
+              "line": 4,
+              "column": 27,
+              "selector": "html > head > meta:nth-child(1)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <meta> instead of self-closing element <meta/>",
+              "line": 5,
+              "column": 73,
+              "selector": "html > head > meta:nth-child(2)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <meta> instead of self-closing element <meta/>",
+              "line": 9,
+              "column": 5,
+              "selector": "html > head > meta:nth-child(3)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <meta> instead of self-closing element <meta/>",
+              "line": 10,
+              "column": 48,
+              "selector": "html > head > meta:nth-child(4)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <link> instead of self-closing element <link/>",
+              "line": 12,
+              "column": 69,
+              "selector": "html > head > link:nth-child(6)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <link> instead of self-closing element <link/>",
+              "line": 13,
+              "column": 49,
+              "selector": "html > head > link:nth-child(7)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <br> instead of self-closing element <br/>",
+              "line": 29,
+              "column": 61,
+              "selector": "html > body > header > span > br",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <br> instead of self-closing element <br/>",
+              "line": 34,
+              "column": 28,
+              "selector": "#main > section > h1 > br",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <br> instead of self-closing element <br/>",
+              "line": 53,
+              "column": 34,
+              "selector": "#scope > h2 > br",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <br> instead of self-closing element <br/>",
+              "line": 100,
+              "column": 33,
+              "selector": "#credits > h2 > br",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            }
+          ]
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 17,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 44,
+          "violations": [],
+          "incomplete": []
+        }
+      },
+      "rendered": {
+        "html": {
+          "valid": false,
+          "errorCount": 2,
+          "warningCount": 0,
+          "messages": [
+            {
+              "ruleId": "no-trailing-whitespace",
+              "severity": 2,
+              "message": "Trailing whitespace",
+              "line": 187,
+              "column": 1,
+              "selector": null,
+              "ruleUrl": "https://html-validate.org/rules/no-trailing-whitespace.html"
+            },
+            {
+              "ruleId": "no-trailing-whitespace",
+              "severity": 2,
+              "message": "Trailing whitespace",
+              "line": 188,
+              "column": 1,
+              "selector": null,
+              "ruleUrl": "https://html-validate.org/rules/no-trailing-whitespace.html"
+            }
+          ]
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 14,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 47,
+          "violations": [],
+          "incomplete": []
+        },
+        "recordCounts": {
+          "milestones": 0,
+          "statistics": 0,
+          "sources": 11
+        }
+      }
+    },
+    {
+      "page": "404.html",
+      "source": {
+        "html": {
+          "valid": false,
+          "errorCount": 9,
+          "warningCount": 0,
+          "messages": [
+            {
+              "ruleId": "doctype-style",
+              "severity": 2,
+              "message": "DOCTYPE should be uppercase",
+              "line": 1,
+              "column": 1,
+              "selector": null,
+              "ruleUrl": "https://html-validate.org/rules/doctype-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <meta> instead of self-closing element <meta/>",
+              "line": 4,
+              "column": 27,
+              "selector": "html > head > meta:nth-child(1)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <meta> instead of self-closing element <meta/>",
+              "line": 5,
+              "column": 73,
+              "selector": "html > head > meta:nth-child(2)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <meta> instead of self-closing element <meta/>",
+              "line": 6,
+              "column": 79,
+              "selector": "html > head > meta:nth-child(3)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <meta> instead of self-closing element <meta/>",
+              "line": 7,
+              "column": 48,
+              "selector": "html > head > meta:nth-child(4)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <link> instead of self-closing element <link/>",
+              "line": 9,
+              "column": 69,
+              "selector": "html > head > link:nth-child(6)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <link> instead of self-closing element <link/>",
+              "line": 10,
+              "column": 49,
+              "selector": "html > head > link:nth-child(7)",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <br> instead of self-closing element <br/>",
+              "line": 26,
+              "column": 61,
+              "selector": "html > body > header > span > br",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            },
+            {
+              "ruleId": "void-style",
+              "severity": 2,
+              "message": "Expected omitted end tag <br> instead of self-closing element <br/>",
+              "line": 31,
+              "column": 30,
+              "selector": "#main > section > h1 > br",
+              "ruleUrl": "https://html-validate.org/rules/void-style.html"
+            }
+          ]
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 14,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 47,
+          "violations": [],
+          "incomplete": []
+        }
+      },
+      "rendered": {
+        "html": {
+          "valid": false,
+          "errorCount": 1,
+          "warningCount": 0,
+          "messages": [
+            {
+              "ruleId": "no-trailing-whitespace",
+              "severity": 2,
+              "message": "Trailing whitespace",
+              "line": 34,
+              "column": 1,
+              "selector": null,
+              "ruleUrl": "https://html-validate.org/rules/no-trailing-whitespace.html"
+            }
+          ]
+        },
+        "accessibility": {
+          "violationCount": 0,
+          "failingNodeCount": 0,
+          "passRuleCount": 14,
+          "incompleteRuleCount": 0,
+          "inapplicableRuleCount": 47,
+          "violations": [],
+          "incomplete": []
+        },
+        "recordCounts": {
+          "milestones": 0,
+          "statistics": 0,
+          "sources": 0
+        }
+      }
+    }
+  ],
+  "totals": {
+    "htmlErrors": 75,
+    "htmlWarnings": 0,
+    "axeViolations": 0,
+    "axeIncomplete": 0
+  }
+}

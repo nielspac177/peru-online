@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="1280" viewBox="0 0 390 1280" role="img" aria-labelledby="title desc">
+<title id="title">Everyday connections — mobile proposed wireframe</title>
+<desc id="desc">Original initial layout proposal. Boxes and short labels indicate hierarchy; this is not a screenshot of the completed website.</desc>
+<rect width="390" height="1280" fill="#f4f1e9"/>
+<text x="24" y="35" font-size="21" fill="#21241f" font-family="Georgia,serif">PERU ONLINE</text>
+<text x="24" y="69" font-size="13" fill="#21241f" font-family="Helvetica,sans-serif">Overview   Timeline</text>
+<text x="24" y="94" font-size="13" fill="#21241f" font-family="Helvetica,sans-serif">Connections   Sources &amp; project</text>
+<line x1="24" y1="114" x2="366" y2="114" stroke="#c5c1b7"/>
+<text x="24" y="153" font-size="11" fill="#ad281b" font-family="Helvetica,sans-serif">INITIAL PROPOSAL  /  1997–2025</text>
+<text x="24" y="209" font-size="41" fill="#21241f" font-family="Georgia,serif">How Peru</text>
+<text x="24" y="256" font-size="41" fill="#21241f" font-family="Georgia,serif">got online.</text>
+<rect x="24" y="298" width="342" height="3" fill="#c5c1b7"/>
+<rect x="24" y="313" width="342" height="3" fill="#c5c1b7"/>
+<rect x="24" y="328" width="246.23999999999998" height="3" fill="#c5c1b7"/>
+<line x1="24" y1="375" x2="366" y2="375" stroke="#c5c1b7"/>
+<text x="24" y="410" font-size="22" fill="#21241f" font-family="Georgia,serif">01  The public cabina</text>
+<rect x="24" y="433" width="342" height="105" fill="#e7e3d9" stroke="#c5c1b7"/>
+<text x="42" y="463" font-size="13" fill="#21241f" font-family="Helvetica,sans-serif">Original illustrative artwork</text>
+<rect x="24" y="565" width="342" height="3" fill="#c5c1b7"/>
+<rect x="24" y="580" width="342" height="3" fill="#c5c1b7"/>
+<rect x="24" y="595" width="246.23999999999998" height="3" fill="#c5c1b7"/>
+<text x="24" y="625" font-size="12" fill="#ad281b" font-family="Helvetica,sans-serif">Evidence / source ↗</text>
+<line x1="24" y1="647" x2="366" y2="647" stroke="#c5c1b7"/>
+<text x="24" y="682" font-size="22" fill="#21241f" font-family="Georgia,serif">02  Internet in your pocket</text>
+<rect x="24" y="705" width="342" height="105" fill="#e7e3d9" stroke="#c5c1b7"/>
+<text x="42" y="735" font-size="13" fill="#21241f" font-family="Helvetica,sans-serif">Original illustrative artwork</text>
+<rect x="24" y="837" width="342" height="3" fill="#c5c1b7"/>
+<rect x="24" y="852" width="342" height="3" fill="#c5c1b7"/>
+<rect x="24" y="867" width="246.23999999999998" height="3" fill="#c5c1b7"/>
+<text x="24" y="897" font-size="12" fill="#ad281b" font-family="Helvetica,sans-serif">Evidence / source ↗</text>
+<line x1="24" y1="919" x2="366" y2="919" stroke="#c5c1b7"/>
+<text x="24" y="954" font-size="22" fill="#21241f" font-family="Georgia,serif">03  The distance to access</text>
+<rect x="24" y="977" width="342" height="105" fill="#e7e3d9" stroke="#c5c1b7"/>
+<text x="42" y="1007" font-size="13" fill="#21241f" font-family="Helvetica,sans-serif">Original illustrative artwork</text>
+<rect x="24" y="1109" width="342" height="3" fill="#c5c1b7"/>
+<rect x="24" y="1124" width="342" height="3" fill="#c5c1b7"/>
+<rect x="24" y="1139" width="246.23999999999998" height="3" fill="#c5c1b7"/>
+<text x="24" y="1169" font-size="12" fill="#ad281b" font-family="Helvetica,sans-serif">Evidence / source ↗</text>
+<line x1="24" y1="1215" x2="366" y2="1215" stroke="#c5c1b7"/>
+<text x="24" y="1244" font-size="11" fill="#21241f" font-family="Helvetica,sans-serif">PERU ONLINE  /  proposed layout</text>
+<text x="24" y="1264" font-size="9" fill="#21241f" font-family="Helvetica,sans-serif">Original wireframe · desktop / mobile study</text>
+</svg>

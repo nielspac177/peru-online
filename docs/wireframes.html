@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peru Online — initial responsive wireframes</title>
+  <style>
+    :root { color-scheme: light; --paper:#f4f1e9; --ink:#21241f; --red:#ad281b; --line:#c5c1b7; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.6 Georgia,serif; }
+    main { max-width:1500px; margin:auto; padding:40px clamp(20px,5vw,72px); }
+    .eyebrow, nav, figcaption, .note { font-family:Helvetica,sans-serif; }
+    .eyebrow { color:var(--red); text-transform:uppercase; letter-spacing:.12em; font-size:12px; }
+    h1 { font-size:clamp(38px,6vw,72px); line-height:1.05; font-weight:400; max-width:900px; margin:22px 0; }
+    h2 { font-size:32px; font-weight:400; margin:0 0 8px; }
+    p { max-width:850px; }
+    a { color:var(--red); text-underline-offset:4px; }
+    a:focus-visible { outline:3px solid var(--red); outline-offset:5px; }
+    nav { display:flex; flex-wrap:wrap; gap:14px 26px; margin:30px 0; }
+    nav a { display:inline-block; padding:6px 0; }
+    section { border-top:1px solid var(--line); padding:32px 0 48px; scroll-margin-top:20px; }
+    .pair { display:grid; grid-template-columns:minmax(0,3fr) minmax(200px,1fr); gap:26px; align-items:start; }
+    figure { margin:0; }
+    img { display:block; width:100%; height:auto; border:1px solid var(--line); }
+    figcaption { margin:10px 0 18px; font-size:13px; }
+    .note { border-left:3px solid var(--red); padding-left:18px; font-size:14px; }
+    footer { border-top:1px solid var(--line); padding-top:20px; font-size:14px; }
+    @media (max-width:700px) { .pair { grid-template-columns:1fr; } figure.mobile { max-width:390px; } }
+    @media print { nav { display:none; } main { padding:16px; } section { break-before:page; } .pair { grid-template-columns:3fr 1fr; gap:15px; } }
+  </style>
+</head>
+<body>
+  <main id="main">
+    <header>
+      <p class="eyebrow">Peru Online / Design evidence / Version 0</p>
+      <h1>A country coming online.<br>Planning the reading experience.</h1>
+      <p>Initial proposed layouts for a history of the internet in Peru, 1997–2025. Each page has a 1200-pixel desktop study and a 390-pixel mobile study. These original diagrams show hierarchy, content placement and responsive reading order.</p>
+      <p class="note">These are wireframes, not screenshots of the completed site. Content labels are illustrative. Human prototype feedback has not yet been collected; use the <a href="feedback.md">feedback form</a> to record actual reviews and changes.</p>
+      <nav aria-label="Wireframe pages"><a href="#overview">01 Overview</a><a href="#timeline">02 Timeline</a><a href="#connections">03 Connections</a><a href="#about">04 Sources &amp; project</a></nav>
+    </header>
+    <section id="overview" aria-labelledby="overview-title">
+      <h2 id="overview-title">01 / Overview</h2>
+      <p>A split desktop hero pairs the introductory story with a globe. On mobile, the summary and timeline link come first, followed by the illustration and stacked chapter routes.</p>
+      <div class="pair"><figure><img src="../evidence/wireframes-overview-desktop.svg" alt="Overview desktop wireframe: left-aligned introduction beside a globe and three reading routes below." width="1200" height="1010"><figcaption>Desktop · 1200 px · <a href="../evidence/wireframes-overview-desktop.svg">Open SVG</a></figcaption></figure><figure class="mobile"><img src="../evidence/wireframes-overview-mobile.svg" alt="Overview mobile wireframe: navigation, introduction, link, globe and three stacked routes." width="390" height="1280"><figcaption>Mobile · 390 px · <a href="../evidence/wireframes-overview-mobile.svg">Open SVG</a></figcaption></figure></div>
+    </section>
+    <section id="timeline" aria-labelledby="timeline-title">
+      <h2 id="timeline-title">02 / Timeline</h2>
+      <p>Period controls precede the chronology. Desktop dates and source links flank the narrative. Mobile places the date, text and source in a single readable order.</p>
+      <div class="pair"><figure><img src="../evidence/wireframes-timeline-desktop.svg" alt="Timeline desktop wireframe with period controls and horizontally arranged dates, narratives and sources." width="1200" height="1010" loading="lazy"><figcaption>Desktop · 1200 px · <a href="../evidence/wireframes-timeline-desktop.svg">Open SVG</a></figcaption></figure><figure class="mobile"><img src="../evidence/wireframes-timeline-mobile.svg" alt="Timeline mobile wireframe with controls and vertically stacked historical entries." width="390" height="1280" loading="lazy"><figcaption>Mobile · 390 px · <a href="../evidence/wireframes-timeline-mobile.svg">Open SVG</a></figcaption></figure></div>
+    </section>
+    <section id="connections" aria-labelledby="connections-title">
+      <h2 id="connections-title">03 / Everyday connections</h2>
+      <p>Three topics connect infrastructure to daily life: public cabinas, mobile access and the digital divide. The proposed desktop columns become stacked illustrated sections on mobile.</p>
+      <div class="pair"><figure><img src="../evidence/wireframes-connections-desktop.svg" alt="Connections desktop wireframe with introductory text and three illustrated topic columns." width="1200" height="1010" loading="lazy"><figcaption>Desktop · 1200 px · <a href="../evidence/wireframes-connections-desktop.svg">Open SVG</a></figcaption></figure><figure class="mobile"><img src="../evidence/wireframes-connections-mobile.svg" alt="Connections mobile wireframe showing cabina, mobile and unequal access topics one after another." width="390" height="1280" loading="lazy"><figcaption>Mobile · 390 px · <a href="../evidence/wireframes-connections-mobile.svg">Open SVG</a></figcaption></figure></div>
+    </section>
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">04 / Sources &amp; project</h2>
+      <p>Sources use consistent attribution fields. Project scope and method occupy a desktop side column and follow the bibliography on mobile.</p>
+      <div class="pair"><figure><img src="../evidence/wireframes-about-desktop.svg" alt="Sources desktop wireframe with bibliography entries on the left and project notes on the right." width="1200" height="1010" loading="lazy"><figcaption>Desktop · 1200 px · <a href="../evidence/wireframes-about-desktop.svg">Open SVG</a></figcaption></figure><figure class="mobile"><img src="../evidence/wireframes-about-mobile.svg" alt="Sources mobile wireframe with full-width bibliography entries followed by scope and method." width="390" height="1280" loading="lazy"><figcaption>Mobile · 390 px · <a href="../evidence/wireframes-about-mobile.svg">Open SVG</a></figcaption></figure></div>
+    </section>
+    <footer><p>Prepared 13 September 2026. <a href="plan.md">Project plan</a> · <a href="design-revisions.md">Revision record</a> · <a href="feedback.md">Human feedback form</a> · <a href="../index.html">Working website</a></p></footer>
+  </main>
+</body>
+</html>

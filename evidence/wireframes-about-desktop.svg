@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1010" viewBox="0 0 1200 1010" role="img" aria-labelledby="title desc">
+<title id="title">Sources &amp; project — desktop proposed wireframe</title>
+<desc id="desc">Original initial layout proposal. Boxes and short labels indicate hierarchy; this is not a screenshot of the completed website.</desc>
+<rect width="1200" height="1010" fill="#f4f1e9"/>
+<text x="60" y="35" font-size="21" fill="#21241f" font-family="Georgia,serif">PERU ONLINE</text>
+<text x="550" y="35" font-size="15" fill="#21241f" font-family="Helvetica,sans-serif">Overview       Timeline       Connections       Sources &amp; project</text>
+<line x1="60" y1="58" x2="1140" y2="58" stroke="#c5c1b7"/>
+<text x="60" y="110" font-size="11" fill="#ad281b" font-family="Helvetica,sans-serif">INITIAL PROPOSAL  /  1997–2025</text>
+<text x="60" y="166" font-size="66" fill="#21241f" font-family="Georgia,serif">Behind the</text>
+<text x="60" y="213" font-size="66" fill="#21241f" font-family="Georgia,serif">story.</text>
+<rect x="60" y="255" width="680" height="3" fill="#c5c1b7"/>
+<rect x="60" y="270" width="680" height="3" fill="#c5c1b7"/>
+<rect x="60" y="285" width="489.59999999999997" height="3" fill="#c5c1b7"/>
+<text x="60" y="330" font-size="36" fill="#21241f" font-family="Georgia,serif">Sources &amp; scope</text>
+<line x1="60" y1="370" x2="1140" y2="370" stroke="#c5c1b7"/>
+<text x="60" y="409" font-size="25" fill="#21241f" font-family="Georgia,serif">01  Source organisation</text>
+<rect x="60" y="438" width="610" height="3" fill="#c5c1b7"/>
+<rect x="60" y="453" width="610" height="3" fill="#c5c1b7"/>
+<rect x="60" y="468" width="439.2" height="3" fill="#c5c1b7"/>
+<text x="60" y="494" font-size="13" fill="#ad281b" font-family="Helvetica,sans-serif">Publication / year / source link ↗</text>
+<line x1="60" y1="523" x2="1140" y2="523" stroke="#c5c1b7"/>
+<text x="60" y="562" font-size="25" fill="#21241f" font-family="Georgia,serif">02  Source organisation</text>
+<rect x="60" y="591" width="610" height="3" fill="#c5c1b7"/>
+<rect x="60" y="606" width="610" height="3" fill="#c5c1b7"/>
+<rect x="60" y="621" width="439.2" height="3" fill="#c5c1b7"/>
+<text x="60" y="647" font-size="13" fill="#ad281b" font-family="Helvetica,sans-serif">Publication / year / source link ↗</text>
+<line x1="60" y1="676" x2="1140" y2="676" stroke="#c5c1b7"/>
+<text x="60" y="715" font-size="25" fill="#21241f" font-family="Georgia,serif">03  Source organisation</text>
+<rect x="60" y="744" width="610" height="3" fill="#c5c1b7"/>
+<rect x="60" y="759" width="610" height="3" fill="#c5c1b7"/>
+<rect x="60" y="774" width="439.2" height="3" fill="#c5c1b7"/>
+<text x="60" y="800" font-size="13" fill="#ad281b" font-family="Helvetica,sans-serif">Publication / year / source link ↗</text>
+<rect x="820" y="360" width="320" height="386" fill="#e7e3d9" stroke="#c5c1b7"/>
+<text x="838" y="390" font-size="13" fill="#21241f" font-family="Helvetica,sans-serif">About this project</text>
+<text x="840" y="434" font-size="18" fill="#21241f" font-family="Georgia,serif">Scope: Peru, 1997–2025</text>
+<rect x="840" y="465" width="260" height="3" fill="#c5c1b7"/>
+<rect x="840" y="480" width="260" height="3" fill="#c5c1b7"/>
+<rect x="840" y="495" width="260" height="3" fill="#c5c1b7"/>
+<rect x="840" y="510" width="260" height="3" fill="#c5c1b7"/>
+<rect x="840" y="525" width="187.2" height="3" fill="#c5c1b7"/>
+<text x="840" y="574" font-size="18" fill="#21241f" font-family="Georgia,serif">Methods and credits</text>
+<rect x="840" y="605" width="260" height="3" fill="#c5c1b7"/>
+<rect x="840" y="620" width="260" height="3" fill="#c5c1b7"/>
+<rect x="840" y="635" width="260" height="3" fill="#c5c1b7"/>
+<rect x="840" y="650" width="260" height="3" fill="#c5c1b7"/>
+<rect x="840" y="665" width="187.2" height="3" fill="#c5c1b7"/>
+<line x1="60" y1="945" x2="1140" y2="945" stroke="#c5c1b7"/>
+<text x="60" y="974" font-size="11" fill="#21241f" font-family="Helvetica,sans-serif">PERU ONLINE  /  proposed layout</text>
+<text x="60" y="994" font-size="9" fill="#21241f" font-family="Helvetica,sans-serif">Original wireframe · desktop / mobile study</text>
+</svg>
